@@ -54,20 +54,20 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "eb147597cdf94ed43ab7a9038716637d2d1bf2bc571da995d0028dec06bd3018"
 
 [[package]]
+name = "matrix_multiply_test"
+version = "0.1.0"
+dependencies = [
+ "ndarray",
+ "ndarray-rand",
+]
+
+[[package]]
 name = "matrixmultiply"
 version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d4f7ec66360130972f34830bfad9ef05c6610a43938a467bcc9ab9369ab3478f"
 dependencies = [
  "rawpointer",
-]
-
-[[package]]
-name = "mm"
-version = "0.1.0"
-dependencies = [
- "ndarray",
- "ndarray-rand",
 ]
 
 [[package]]
