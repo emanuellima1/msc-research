@@ -25,12 +25,12 @@ fn main()
 
     let mut m_a = Vec::<Vec<f64>>::with_capacity(N);
     for _ in 0..N {
-        m_a.push((0..N).map(|_| {rng.gen_range(0.0, 10.0)}).collect());
+        m_a.push((0..N).map(|_| {rng.gen_range(0.0, 1.0)}).collect());
     }
 
     let mut m_b = Vec::<Vec<f64>>::with_capacity(N);
     for _ in 0..N {
-        m_b.push((0..N).map(|_| {rng.gen_range(0.0, 10.0)}).collect());
+        m_b.push((0..N).map(|_| {rng.gen_range(0.0, 1.0)}).collect());
     }
 
     let mut m_c = Vec::<Vec<f64>>::with_capacity(N);

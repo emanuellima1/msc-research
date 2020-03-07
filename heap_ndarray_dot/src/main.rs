@@ -2,11 +2,11 @@ use ndarray::Array;
 use ndarray_rand::RandomExt;
 use ndarray_rand::rand_distr::Uniform;
 
-fn main() {
-    let dim = 1000;
-    
-    let a = Array::random((dim, dim), Uniform::new(0., 10.));
-    let b = Array::random((dim, dim), Uniform::new(0., 10.));
+const N: usize = 1024;
 
-    println!("{:8.4}", a.dot(&b));
+fn main() {
+    let a = Array::random((N, N), Uniform::new(0.0, 1.0));
+    let b = Array::random((N, N), Uniform::new(0.0, 1.0));
+
+    //println!("{:8.4}", a.dot(&b));
 }
