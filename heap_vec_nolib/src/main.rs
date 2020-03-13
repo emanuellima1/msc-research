@@ -19,8 +19,6 @@ fn matrix_multiply(a: &Vec<Vec<f64>>,
 
 fn main()
 {
-    println!("N = {}", N);
-
     let mut rng = rand::thread_rng();
 
     let mut m_a = Vec::<Vec<f64>>::with_capacity(N);
@@ -39,6 +37,4 @@ fn main()
     }
 
     matrix_multiply(&m_a, &m_b, &mut m_c);
-
-    // println!("m_c = {:?}", m_c);
 }
