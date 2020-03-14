@@ -1,0 +1,121 @@
+flags,algorithm,compile_time,execution_time,id
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.48s,26.14,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.46s,26.13,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.47s,26.13,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.47s,26.13,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.42s,26.15,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.46s,26.16,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.47s,26.13,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.46s,25.98,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.46s,26.11,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.48s,26.11,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.45s,26.15,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.47s,26.12,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.45s,26.13,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.46s,26.04,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.46s,26.09,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.45s,26.11,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.46s,26.12,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.47s,26.11,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.45s,26.11,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.46s,26.07,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.47s,26.11,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.47s,26.31,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.45s,26.1,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.48s,26.09,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.46s,26.08,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.52s,26.08,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.50s,26.09,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.47s,26.17,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.52s,26.12,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals,./heap_vec_nolib/,5.49s,26.08,No Flags
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.38s,15.41,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.41s,15.41,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.40s,15.41,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.37s,15.4,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.38s,15.43,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.36s,15.39,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.36s,15.38,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.38s,15.41,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.42s,15.4,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.40s,15.42,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.38s,15.41,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.37s,15.39,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.38s,15.4,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.38s,15.38,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.35s,15.23,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.39s,15.4,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.40s,15.4,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.37s,15.44,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.37s,15.38,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.37s,15.4,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.36s,15.4,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.38s,15.4,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.37s,15.4,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.39s,15.39,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.35s,15.4,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.39s,15.41,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.38s,15.41,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.39s,15.4,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.39s,15.41,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C opt-level=3,./heap_vec_nolib/,6.38s,15.41,Baseline
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.54s,20.97,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.54s,20.92,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.52s,21.06,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.54s,20.94,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.53s,21.0,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.48s,20.96,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.49s,20.84,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.50s,20.95,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.55s,20.97,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.55s,20.99,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.51s,21.03,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.54s,21.02,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.52s,21.01,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.54s,20.96,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.53s,21.06,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.52s,20.92,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.55s,21.01,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.51s,21.0,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.53s,20.98,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.50s,20.9,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.54s,21.04,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.57s,20.98,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.53s,20.95,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.53s,21.03,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.52s,21.02,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.52s,20.96,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.51s,20.85,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.53s,20.99,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.52s,20.98,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg,./heap_vec_nolib/,5.52s,20.96,loop-simplify + mem2reg
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.55s,18.36,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.57s,18.37,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.58s,18.38,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.56s,18.37,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.58s,18.38,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.59s,18.35,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.56s,18.4,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.58s,18.38,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.56s,18.4,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.55s,18.36,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.55s,18.37,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.56s,18.38,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.53s,18.39,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.59s,18.39,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.56s,18.37,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.52s,18.39,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.57s,18.38,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.57s,18.25,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.60s,18.38,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.53s,18.41,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.59s,18.38,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.57s,18.35,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.55s,18.37,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.58s,18.38,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.55s,18.39,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.54s,18.39,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.55s,18.37,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.58s,18.4,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.56s,18.39,instcombine + memcpyopt
+-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt,./heap_vec_nolib/,5.59s,18.41,instcombine + memcpyopt
