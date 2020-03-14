@@ -5,7 +5,7 @@ import numpy as np
 import subprocess
 import os
 
-N_EXPERIMENTS = 2
+N_EXPERIMENTS = 1
 N_FLAGS = 4
 
 # Dictionary to initialize the DataFrame
@@ -23,6 +23,19 @@ flags_dict = {"Flag 1": "-C lto=off -C no-prepopulate-passes -C passes=name-anon
               "Flag 3": "-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=loop-simplify -C passes=mem2reg",
               "Flag 4": "-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals -C passes=instcombine -C passes=memcpyopt"}
 
+names_dict = {"Flag 1": "No Flags",
+              "Flag 2": "Baseline",
+              "Flag 3": "loop-simplify + mem2reg",
+              "Flag 4": "instcombine + memcpyopt"}
+
+target_program = "./heap_vec_nolib/"
+
+results_df = pd.DataFrame({"flags": [],
+                           "algorithm": [],
+                           "compile_time": [],
+                           "execution_time": [],
+                           "id": []})
+
 # For each set of flags
 for flag in flags_dict.keys():
     # Set the RUSTFLAGS env variable with the flags for the experiment
@@ -30,27 +43,58 @@ for flag in flags_dict.keys():
 
     print(f"Set RUSTFLAGS to {os.environ.get('RUSTFLAGS')}")
 
-    # Compile with RUSTFLAGS
-    print("Compiling...")
-    compile = subprocess.Popen(["cargo build"], cwd="./heap_vec_nolib/", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
-
-    # Store the compilation time
-    compilation_dict[flag] = compile.communicate()[1].split()[-1]
-    print(f"Done. It took {compilation_dict[flag]}s to compile.")
-
     # Run experiments
     print("Starting the experiments...")
     for i in range(N_EXPERIMENTS):
+        # Compile with RUSTFLAGS
+        print("Compiling...")
+        compile = subprocess.Popen(["cargo build"],
+                                cwd=target_program,
+                                shell=True,
+                                stdout=subprocess.PIPE,
+                                stderr=subprocess.PIPE,
+                                universal_newlines=True)
+
+        # Compile everytime, so we get a sense of the variance of compilation time
+        # Store the compilation time
+        compilation_dict[flag] = compile.communicate()[1].split()[-1]
+        print(f"Done. It took {compilation_dict[flag]}s to compile.")
+
         print(f"Performing experiment {i}...")
-        run = subprocess.Popen(["/usr/bin/time -f '%e' ./matrix-multiply-raw"], cwd="./heap_vec_nolib/target/debug/", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+        run = subprocess.Popen(["/usr/bin/time -f '%e' ./matrix-multiply-raw"],
+                               cwd="{}/target/debug/".format(target_program),
+                               shell=True,
+                               stdout=subprocess.PIPE,
+                               stderr=subprocess.PIPE,
+                               universal_newlines=True)
+
         results_dict[flag][i] = float(run.communicate()[1])
+
+        print("Removing binary...")
+        compile = subprocess.Popen(["cargo clean"],
+                                cwd=target_program,
+                                shell=True,
+                                stdout=subprocess.PIPE,
+                                stderr=subprocess.PIPE,
+                                universal_newlines=True)
+
+        # Append new row to dataframe
+        results_df = results_df.append(pd.DataFrame({"flags": [flags_dict[flag]],
+                                                     "algorithm": [target_program],
+                                                     "compile_time": [compilation_dict[flag]],
+                                                     "execution_time": [results_dict[flag][i]],
+                                                     "id": [names_dict[flag]]}))
+
+        # Store intermediate results, prevent losing all data in a crash
+        results_df.to_csv("results.csv", index = False, header = True)
 
     print("Done")
 
 
 # DataFrame that will store the result of the experiments
 heap_vec_nolib_results = pd.DataFrame(data=results_dict)
-heap_vec_nolib_results.to_csv("results.csv", index=False, header=True)
+#heap_vec_nolib_results.to_csv("results.csv", index=False, header=True)
+results_df.to_csv("results.csv", index = False, header = True)
 
 # Statistics
 print("\nThe mean execution time of each set of flags are: ")
