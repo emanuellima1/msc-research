@@ -68,6 +68,8 @@ for flag in flags_dict.keys():
                                stderr=subprocess.PIPE,
                                universal_newlines=True)
 
+        results_dict[flag][i] = float(run.communicate()[1])
+
         print("Removing binary...")
         compile = subprocess.Popen(["cargo clean"],
                                 cwd=target_program,
@@ -75,8 +77,6 @@ for flag in flags_dict.keys():
                                 stdout=subprocess.PIPE,
                                 stderr=subprocess.PIPE,
                                 universal_newlines=True)
-
-        results_dict[flag][i] = float(run.communicate()[1])
 
         # Append new row to dataframe
         results_df = results_df.append(pd.DataFrame({"flags": [flags_dict[flag]],
