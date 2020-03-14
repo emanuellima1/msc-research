@@ -2,3 +2,4 @@ target/
 .vscode
 summary.txt
 results.csv
+*.lock
