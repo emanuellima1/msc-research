@@ -25,7 +25,7 @@ flags_dict = {"Flag 1": "-C lto=off -C no-prepopulate-passes -C passes=name-anon
 
 names_dict = {"Flag 1": "No Flags",
               "Flag 2": "Baseline",
-              "Flag 3": "loop-implify + mem2reg",
+              "Flag 3": "loop-simplify + mem2reg",
               "Flag 4": "instcombine + memcpyopt"}
 
 target_program = "./heap_vec_nolib/"
@@ -67,6 +67,14 @@ for flag in flags_dict.keys():
                                stdout=subprocess.PIPE,
                                stderr=subprocess.PIPE,
                                universal_newlines=True)
+
+        print("Removing binary...")
+        compile = subprocess.Popen(["cargo clean"],
+                                cwd=target_program,
+                                shell=True,
+                                stdout=subprocess.PIPE,
+                                stderr=subprocess.PIPE,
+                                universal_newlines=True)
 
         results_dict[flag][i] = float(run.communicate()[1])
 
