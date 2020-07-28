@@ -1,13 +1,4 @@
-using Pkg
-Pkg.add("StatsModels")
-Pkg.add("Distributions")
-Pkg.add("Random")
-Pkg.add("GLM")
-Pkg.add(PackageSpec(url = "https://github.com/phrb/ExperimentalDesign.jl/"))
-Pkg.status()
-Pkg.update()
-
-using ExperimentalDesign, StatsModels, GLM, DataFrames, Distributions, Random
+using ExperimentalDesign, StatsModels, GLM, DataFrames, Distributions, Random, CSV
 
 function y(x)
     env_flags = ""
@@ -37,30 +28,28 @@ end
 design = PlackettBurman(16)
 
 flags = ["constprop", "instcombine", "argpromotion", "jump-threading", "lcssa", "licm", "loop-deletion", "loop-extract", "loop-reduce", "loop-rotate", "loop-simplify", "loop-unroll", "loop-unroll-and-jam", "loop-unswitch", "mem2reg", "memcpyopt"]
+columns = vcat(flags, ["dummy 1", "dummy 2", "dummy 3"])
 
-# Random.seed!(192938)
-# design.matrix[!, :response] = y.(eachrow(design.matrix[:, collect(design.factors)]))
-# show(design.matrix, allrows = true, allcols = true)
+rename!(design.matrix, columns)
 
-# lm(design.formula, design.matrix)
+# Screening
+Random.seed!(192938)
 
-# lm(term(:response) ~ sum(term.(design.factors)), design.matrix)
+for i = 1:15
+    design.matrix[!, :response] = y.(eachrow(design.matrix[:, collect(design.factors)]))
+end
 
-# Random.seed!(8418172)
+design.matrix[!, :mean] = mean.(eachrow(design.matrix[:, 20:35]))
 
-# random_design_generator = RandomDesign(DiscreteNonParametric([-1, 1], [0.5, 0.5]), 6)
-# random_design = rand(random_design_generator, 8)
+CSV.write("screening_matrix.csv", design.matrix)
 
-# random_design[!, :response] = y.(eachrow(random_design[:, :]))
-# random_design
+# Random design
+Random.seed!(8418172)
+random_design_generator = RandomDesign(DiscreteNonParametric([-1, 1], [0.5, 0.5]), 6)
+random_design = rand(random_design_generator, 8)
 
-# lm(random_design_generator.formula, random_design)
+for i = 1:15
+    random_design[!, :response] = y.(eachrow(random_design[:, :]))
+end
 
-Random.seed!(2989476)
-
-factorial_design = FullFactorial(fill([-1, 1], 6), explicit = true)
-factorial_design.matrix[!, :response] = y.(eachrow(factorial_design.matrix[:, :]))
-
-show(factorial_design.matrix, allrows = true, allcols = true)
-
-println(lm(factorial_design.formula, factorial_design.matrix))
+CSV.write("random_matrix.csv", random_design)
