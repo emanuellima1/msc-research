@@ -25,31 +25,37 @@ function y(x)
     return exec_time
 end
 
-design = PlackettBurman(16)
+function e(x)
+    rand()
+end
 
-flags = ["constprop", "instcombine", "argpromotion", "jump-threading", "lcssa", "licm", "loop-deletion", "loop-extract", "loop-reduce", "loop-rotate", "loop-simplify", "loop-unroll", "loop-unroll-and-jam", "loop-unswitch", "mem2reg", "memcpyopt"]
-columns = vcat(flags, ["dummy 1", "dummy 2", "dummy 3"])
+design = PlackettBurman(@formula(0 ~ constprop + instcombine + argpromotion + term(jump - threading))) # + lcssa + licm + Symbol(loop - deletion) + Symbol(loop - extract) + Symbol(loop - reduce) + Symbol(loop - rotate) + Symbol(loop - simplify) + Symbol(loop - unroll) + Symbol(loop - unroll - and - jam) + Symbol(loop - unswitch) + mem2reg + memcpyopt))
 
-rename!(design.matrix, columns)
+repetitions = 15
 
 # Screening
 Random.seed!(192938)
+design.matrix[!, :response] = e.(eachrow(design.matrix[:, collect(design.factors)]))
+screening_results = copy(design.matrix)
 
-for i = 1:15
-    design.matrix[!, :response] = y.(eachrow(design.matrix[:, collect(design.factors)]))
+for i = 1:repetitions
+    design.matrix[!, :response] = e.(eachrow(design.matrix[:, collect(design.factors)]))
+    append!(screening_results, copy(design.matrix))
 end
 
-design.matrix[!, :mean] = mean.(eachrow(design.matrix[:, 20:35]))
-
-CSV.write("screening_matrix.csv", design.matrix)
+CSV.write("screening_matrix.csv", screening_results)
 
 # Random design
 Random.seed!(8418172)
-random_design_generator = RandomDesign(DiscreteNonParametric([-1, 1], [0.5, 0.5]), 6)
-random_design = rand(random_design_generator, 8)
+design_distribution = DesignDistribution(DiscreteNonParametric([-1, 1], [0.5, 0.5]), 16)
+random_design = rand(design_distribution, 10)
 
-for i = 1:15
-    random_design[!, :response] = y.(eachrow(random_design[:, :]))
+random_design.matrix[!, :response] = e.(eachrow(random_design.matrix[:, :]))
+random_results = copy(random_design.matrix)
+
+for i = 1:repetitions
+    random_design.matrix[!, :response] = e.(eachrow(random_design.matrix[:, :]))
+    append!(random_results, copy(random_design.matrix))
 end
 
-CSV.write("random_matrix.csv", random_design)
+CSV.write("random_matrix.csv", random_results)
