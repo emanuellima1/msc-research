@@ -25,23 +25,24 @@ function y(x)
     return exec_time
 end
 
-function e(x)
-    rand()
-end
+design = PlackettBurman(16)
 
-design = PlackettBurman(@formula(0 ~ constprop + instcombine + argpromotion + term(jump - threading))) # + lcssa + licm + Symbol(loop - deletion) + Symbol(loop - extract) + Symbol(loop - reduce) + Symbol(loop - rotate) + Symbol(loop - simplify) + Symbol(loop - unroll) + Symbol(loop - unroll - and - jam) + Symbol(loop - unswitch) + mem2reg + memcpyopt))
+flags = ["constprop", "instcombine", "argpromotion", "jump-threading", "lcssa", "licm", "loop-deletion", "loop-extract", "loop-reduce", "loop-rotate", "loop-simplify", "loop-unroll", "loop-unroll-and-jam", "loop-unswitch", "mem2reg", "memcpyopt"]
+columns = vcat(flags, ["Dummy 1", "Dummy 2", "Dummy 3", "Response"])
 
 repetitions = 15
 
 # Screening
 Random.seed!(192938)
-design.matrix[!, :response] = e.(eachrow(design.matrix[:, collect(design.factors)]))
+design.matrix[!, :response] = y.(eachrow(design.matrix[:, collect(design.factors)]))
 screening_results = copy(design.matrix)
 
 for i = 1:repetitions
-    design.matrix[!, :response] = e.(eachrow(design.matrix[:, collect(design.factors)]))
+    design.matrix[!, :response] = y.(eachrow(design.matrix[:, collect(design.factors)]))
     append!(screening_results, copy(design.matrix))
 end
+
+rename!(screening_results, columns)
 
 CSV.write("screening_matrix.csv", screening_results)
 
@@ -50,12 +51,16 @@ Random.seed!(8418172)
 design_distribution = DesignDistribution(DiscreteNonParametric([-1, 1], [0.5, 0.5]), 16)
 random_design = rand(design_distribution, 10)
 
-random_design.matrix[!, :response] = e.(eachrow(random_design.matrix[:, :]))
+random_design.matrix[!, :response] = y.(eachrow(random_design.matrix[:, :]))
 random_results = copy(random_design.matrix)
 
 for i = 1:repetitions
-    random_design.matrix[!, :response] = e.(eachrow(random_design.matrix[:, :]))
+    random_design.matrix[!, :response] = y.(eachrow(random_design.matrix[:, :]))
     append!(random_results, copy(random_design.matrix))
 end
+
+columns_random = vcat(flags, ["Response"])
+
+rename!(random_results, columns_random)
 
 CSV.write("random_matrix.csv", random_results)
