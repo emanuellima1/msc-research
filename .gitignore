@@ -3,5 +3,3 @@ target/
 summary.txt
 results.csv
 *.lock
-random_matrix.csv
-screening_matrix.csv
