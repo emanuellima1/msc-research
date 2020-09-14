@@ -11,7 +11,7 @@ function y(x)
 
     env_flags = "-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals " * env_flags
 
-    cmd = `cargo build --manifest-path ../heap_vec_nolib/Cargo.toml`
+    cmd = `cargo build --manifest-path ../../Programs/heap_vec_nolib/Cargo.toml`
 
     println(env_flags)
     println(cmd)
@@ -20,15 +20,18 @@ function y(x)
 
     run(cmd)
 
-    exec_time = @elapsed run(`../heap_vec_nolib/target/debug/matrix-multiply-raw`)
+    exec_time = @elapsed run(`../../Programs/heap_vec_nolib/target/debug/matrix-multiply-raw`)
 
     return exec_time
 end
 
-model = @formula(0 ~ constprop + instcombine + argpromotion + jump_threading +
-                 lcssa + licm + loop_deletion + loop_extract + loop_reduce +
-                 loop_rotate + loop_simplify + loop_unroll + loop_unroll_and_jam +
-                 loop_unswitch + mem2reg + memcpyopt)
+model = @formula(0 ~ adce + always_inline + argpromotion + break_crit_edges + constmerge + 
+dce + deadargelim + die + dse + globaldce + globalopt + gvn + indvars + inline + instcombine + 
+ipsccp + jump_threading + lcssa + licm + loop_deletion + loop_extract + loop_extract_single + 
+loop_reduce + loop_rotate + loop_simplify + loop_unroll + loop_unroll_and_jam + loop_unswitch + 
+loweratomic + lowerinvoke + lowerswitch + mem2reg + memcpyopt + mergefunc + mergereturn + 
+partial_inliner + prune_eh + reassociate + reg2mem + sroa + sccp + simplifycfg + sink + strip + 
+strip_dead_debug_info + strip_dead_prototypes + strip_debug_declare + strip_nondebug + tailcallelim)
 
 design = PlackettBurman(model)
 
@@ -53,7 +56,7 @@ design_distribution = DesignDistribution(NamedTuple{getfield.(model.rhs, :sym)}(
     repeat([DiscreteNonParametric([-1, 1],
                                   [0.5, 0.5])], 16)))
 
-random_design = rand(design_distribution, 10)
+random_design = rand(design_distribution, 40)
 
 random_design.matrix[!, :response] = y.(eachrow(random_design.matrix[:, :]))
 random_results = copy(random_design.matrix)

@@ -17,7 +17,7 @@ Won the 2nd place on the scientific initiation track of the conference.
 #### Work in Progress
 
 - [Expansion of the search space](Scripts/Which_Flags/which_flags.csv)
-- [Screening and Random Sampling experiments](Experiments/Phase2/screening_experiment.jl)
+- [Screening and Random Sampling experiments](Experiments/Phase2/experiments.jl)
 - Statistical analysis of the results
 
 ## Interesting links
