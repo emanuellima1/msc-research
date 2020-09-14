@@ -36,4 +36,4 @@ rustc -C help
 
 ## Financed by
 
-- [Hewlett Packard Enterprise](www.hpe.com)
+- [Hewlett Packard Enterprise](https://www.hpe.com)
