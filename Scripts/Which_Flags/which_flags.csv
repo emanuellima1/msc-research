@@ -1,0 +1,56 @@
+adce,True: 2.25s
+always-inline,True: 2.24s
+argpromotion,True: 2.24s
+bb-vectorize,False
+block-placement,False
+break-crit-edges,True: 2.24s
+codegenprepare,False
+constmerge,True: 2.26s
+dce,True: 2.21s
+deadargelim,True: 2.22s
+deadtypeelim,False
+die,True: 2.22s
+dse,True: 2.22s
+function-attrs,False
+globaldce,True: 2.24s
+globalopt,True: 2.27s
+gvn,True: 2.30s
+indvars,True: 2.27s
+inline,True: 2.25s
+instcombine,True: 2.24s
+aggressive-instcombine,False
+internalize,False
+ipsccp,True: 2.33s
+jump-threading,True: 2.30s
+lcssa,True: 2.35s
+licm,True: 2.41s
+loop-deletion,True: 2.42s
+loop-extract,True: 2.56s
+loop-extract-single,True: 2.60s
+loop-reduce,True: 2.44s
+loop-rotate,True: 2.35s
+loop-simplify,True: 2.32s
+loop-unroll,True: 2.35s
+loop-unroll-and-jam,True: 2.27s
+loop-unswitch,True: 2.28s
+loweratomic,True: 2.34s
+lowerinvoke,True: 2.34s
+lowerswitch,True: 2.31s
+mem2reg,True: 2.30s
+memcpyopt,True: 2.29s
+mergefunc,True: 2.37s
+mergereturn,True: 2.26s
+partial-inliner,True: 2.29s
+prune-eh,True: 2.31s
+reassociate,True: 2.27s
+reg2mem,True: 2.29s
+sroa,True: 2.27s
+sccp,True: 2.57s
+simplifycfg,True: 2.40s
+sink,True: 2.26s
+strip,True: 2.22s
+strip-dead-debug-info,True: 2.26s
+strip-dead-prototypes,True: 2.25s
+strip-debug-declare,True: 2.26s
+strip-nondebug,True: 2.28s
+tailcallelim,True: 2.23s

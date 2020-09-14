@@ -1,17 +1,30 @@
-# Matrix Multiply Test  
+# Autotuning the LLVM IR for Rust Programs
 
-Simple matrix multiply in Rust to serve as an experiment to LLVM autotuning.
+LLVM autotuning experiments using matrix multiplication in Rust.
 
-## Interesting flags
+## Study phases
 
-```bash
-rustc --edition=2018 --crate-name matrix_multiply_test main.rs --crate-type bin --emit=llvm-ir,link -C debuginfo=0 -L dependency=/home/emanuel/Documentos/mm/target/debug/deps --extern ndarray=/home/emanuel/Documentos/mm/target/debug/deps/libndarray-30276bc906ea8492.rlib --extern ndarray_rand=/home/emanuel/Documentos/mm/target/debug/deps/libndarray_rand-7489760779d5a8e9.rlib
-```
+### Phase 1
+
+- [ERAD 2020](https://eradsp2020.ncc.unesp.br/)
+- [Article](Articles/ERAD_2020.pdf)
+
+Small experiment with 4 flags that demonstrated the impact that LLVM IR flag selection can have on the performance of Rust code.  
+Won the 2nd place on the scientific initiation track of the conference.  
+
+### Phase 2
+
+#### Work in Progress
+
+- [Expansion of the search space](Scripts/Which_Flags/which_flags.csv)
+- [Screening and Random Sampling experiments](Experiments/Phase2/screening_experiment.jl)
+- Statistical analysis of the results
 
 ## Interesting links
 
 - [Rustc Codegen](https://doc.rust-lang.org/rustc/codegen-options/index.html)
 - [LLVM Passes](http://llvm.org/docs/Passes.html)
+- [Rustc Book](https://rustc-dev-guide.rust-lang.org/)
 
 ## Interesting commands
 
@@ -20,3 +33,7 @@ rustc --edition=2018 --crate-name matrix_multiply_test main.rs --crate-type bin 
 ```bash
 rustc -C help
 ```
+
+## Financed by
+
+- [Hewlett Packard Enterprise](www.hpe.com)
