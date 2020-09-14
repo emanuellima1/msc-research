@@ -11,7 +11,7 @@ function y(x)
 
     env_flags = "-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals " * env_flags
 
-    cmd = `cargo build --manifest-path ../../Programs/heap_vec_nolib/Cargo.toml`
+    cmd = `cargo build --manifest-path ../../Benchmarks/heap_vec_nolib/Cargo.toml`
 
     println(env_flags)
     println(cmd)
@@ -20,7 +20,7 @@ function y(x)
 
     run(cmd)
 
-    exec_time = @elapsed run(`../../Programs/heap_vec_nolib/target/debug/matrix-multiply-raw`)
+    exec_time = @elapsed run(`../../Benchmarks/heap_vec_nolib/target/debug/matrix-multiply-raw`)
 
     return exec_time
 end
