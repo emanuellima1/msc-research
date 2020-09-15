@@ -58,11 +58,11 @@ design_distribution = DesignDistribution(NamedTuple{getfield.(model.rhs, :sym)}(
 
 random_design = rand(design_distribution, 40)
 
-random_design.matrix[!, :response] = y.(eachrow(random_design.matrix[:, :]))
+random_design.matrix[!, :response] = y.(eachrow(random_design.matrix[:, collect(keys(random_design.factors))]))
 random_results = copy(random_design.matrix)
 
 for i = 1:repetitions
-    random_design.matrix[!, :response] = y.(eachrow(random_design.matrix[:, :]))
+    random_design.matrix[!, :response] = y.(eachrow(random_design.matrix[:, collect(keys(random_design.factors))]))
     append!(random_results, copy(random_design.matrix))
 end
 
