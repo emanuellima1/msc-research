@@ -11,14 +11,19 @@ function y(x)
 
     env_flags = "-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals " * env_flags
 
-    cmd = `cargo build --manifest-path ../../Benchmarks/heap_vec_nolib/Cargo.toml`
+    cmd = `timeout -s9 30s cargo build --manifest-path ../../Benchmarks/heap_vec_nolib/Cargo.toml`
 
     println(env_flags)
     println(cmd)
 
     ENV["RUSTFLAGS"] = env_flags
 
-    run(cmd)
+    try
+        run(cmd)
+    catch error
+        println(error)
+        return -1.0
+    end
 
     exec_time = @elapsed run(`../../Benchmarks/heap_vec_nolib/target/debug/matrix-multiply-raw`)
 
