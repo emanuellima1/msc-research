@@ -59,7 +59,7 @@ Random.seed!(8418172)
 
 design_distribution = DesignDistribution(NamedTuple{getfield.(model.rhs, :sym)}(
     repeat([DiscreteNonParametric([-1, 1],
-                                  [0.5, 0.5])], 16)))
+                                  [0.5, 0.5])], 49)))
 
 random_design = rand(design_distribution, 40)
 
