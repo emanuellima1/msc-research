@@ -11,35 +11,47 @@ function y(x)
 
     env_flags = "-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals " * env_flags
 
-    cmd = `cargo build --manifest-path ../heap_vec_nolib/Cargo.toml`
+    cmd = `timeout -s9 30s cargo build --manifest-path ../../Benchmarks/heap_vec_nolib/Cargo.toml`
 
     println(env_flags)
     println(cmd)
 
     ENV["RUSTFLAGS"] = env_flags
 
-    run(cmd)
+    try
+        run(cmd)
+    catch error
+        println(error)
+        return -1.0
+    end
 
-    exec_time = @elapsed run(`../heap_vec_nolib/target/debug/matrix-multiply-raw`)
+    exec_time = @elapsed run(`../../Benchmarks/heap_vec_nolib/target/debug/matrix-multiply-raw`)
 
     return exec_time
 end
 
-results = CSV.read("screening_matrix.csv", DataFrame)
+results = CSV.read("Results/screening_experiment_new_space.csv", DataFrame)
 
 rename!(results, replace.(names(results), "-" => "_"))
 rename!(results, replace.(names(results), "R" => "r"))
 rename!(results, replace.(names(results), "Dummy " => "dummy_"))
 
-screening_model = @formula(response ~ constprop + instcombine + argpromotion + jump_threading +
-                           lcssa + licm + loop_deletion + loop_extract + loop_reduce +
-                           loop_rotate + loop_simplify + loop_unroll + loop_unroll_and_jam +
-                           loop_unswitch + mem2reg + memcpyopt + dummy_1 + dummy_2 + dummy_3)
+screening_model = @formula(response ~ adce + always_inline + argpromotion + break_crit_edges + constmerge + 
+dce + deadargelim + die + dse + globaldce + globalopt + gvn + indvars + inline + instcombine + 
+ipsccp + jump_threading + lcssa + licm + loop_deletion + loop_extract + loop_extract_single + 
+loop_reduce + loop_rotate + loop_simplify + loop_unroll + loop_unroll_and_jam + loop_unswitch + 
+loweratomic + lowerinvoke + lowerswitch + mem2reg + memcpyopt + mergefunc + mergereturn + 
+partial_inliner + prune_eh + reassociate + reg2mem + sroa + sccp + simplifycfg + sink + strip + 
+strip_dead_debug_info + strip_dead_prototypes + strip_debug_declare + strip_nondebug + 
+tailcallelim + dummy_1 + dummy_2 + dummy_3 + dummy_4 + dummy_5 + dummy_6 + dummy_7 + dummy_8 + dummy_9 + dummy_10)
 
-model = @formula(response ~ constprop + instcombine + argpromotion + jump_threading +
-                 lcssa + licm + loop_deletion + loop_extract + loop_reduce +
-                 loop_rotate + loop_simplify + loop_unroll + loop_unroll_and_jam +
-                 loop_unswitch + mem2reg + memcpyopt)
+model = @formula(response ~ adce + always_inline + argpromotion + break_crit_edges + constmerge + 
+dce + deadargelim + die + dse + globaldce + globalopt + gvn + indvars + inline + instcombine + 
+ipsccp + jump_threading + lcssa + licm + loop_deletion + loop_extract + loop_extract_single + 
+loop_reduce + loop_rotate + loop_simplify + loop_unroll + loop_unroll_and_jam + loop_unswitch + 
+loweratomic + lowerinvoke + lowerswitch + mem2reg + memcpyopt + mergefunc + mergereturn + 
+partial_inliner + prune_eh + reassociate + reg2mem + sroa + sccp + simplifycfg + sink + strip + 
+strip_dead_debug_info + strip_dead_prototypes + strip_debug_declare + strip_nondebug + tailcallelim)
 
 screening_fit = lm(screening_model, results)
 println(screening_fit)
@@ -49,7 +61,7 @@ println(fit)
 
 design_distribution = DesignDistribution(NamedTuple{getfield.(model.rhs, :sym)}(
     repeat([DiscreteNonParametric([-1, 1],
-                                  [0.5, 0.5])], 16)))
+                                  [0.5, 0.5])], 49)))
 
 random_design = rand(design_distribution, 500_000)
 random_design.matrix[!, :prediction] = predict(fit, random_design.matrix)
