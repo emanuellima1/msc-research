@@ -43,7 +43,7 @@ loop_reduce + loop_rotate + loop_simplify + loop_unroll + loop_unroll_and_jam + 
 loweratomic + lowerinvoke + lowerswitch + mem2reg + memcpyopt + mergefunc + mergereturn + 
 partial_inliner + prune_eh + reassociate + reg2mem + sroa + sccp + simplifycfg + sink + strip + 
 strip_dead_debug_info + strip_dead_prototypes + strip_debug_declare + strip_nondebug + 
-tailcallelim + dummy_1 + dummy_2 + dummy_3 + dummy_4 + dummy_5 + dummy_6 + dummy_7 + dummy_8 + dummy_9 + dummy_10)
+tailcallelim + dummy1 + dummy2 + dummy3 + dummy4 + dummy5 + dummy6 + dummy7 + dummy8 + dummy9 + dummy10)
 
 model = @formula(response ~ adce + always_inline + argpromotion + break_crit_edges + constmerge + 
 dce + deadargelim + die + dse + globaldce + globalopt + gvn + indvars + inline + instcombine + 
