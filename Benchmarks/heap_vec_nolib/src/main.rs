@@ -1,7 +1,9 @@
-// https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e62972d1ada878cfda92ca2d6173a519
-
 extern crate rand;
-use rand::Rng;
+
+use rand::{Rng, SeedableRng, rngs::StdRng};
+
+use std::fs::File;
+use std::io::Write;
 
 const N: usize = 512;
 
@@ -19,7 +21,9 @@ fn matrix_multiply(a: &Vec<Vec<f64>>,
 
 fn main()
 {
-    let mut rng = rand::thread_rng();
+    let seed = 42;
+
+    let mut rng = StdRng::seed_from_u64(seed);
 
     let mut m_a = Vec::<Vec<f64>>::with_capacity(N);
     for _ in 0..N {
@@ -37,4 +41,15 @@ fn main()
     }
 
     matrix_multiply(&m_a, &m_b, &mut m_c);
+
+    let mut rng_file_id = rand::thread_rng();
+
+    let filename = format!("output-{}.txt", rng_file_id.gen_range(0, 100));
+
+    let mut output = File::create(filename).expect("Unable to create file");
+
+    for line in &m_a {
+        write!(&mut output, "{:?}", line).expect("Unable to write line");
+        write!(&mut output, "\n").expect("Unable to write newline");
+    }
 }
