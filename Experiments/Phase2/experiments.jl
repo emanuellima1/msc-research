@@ -1,7 +1,10 @@
 using ExperimentalDesign, StatsModels, GLM, DataFrames, Distributions, Random, CSV
 
+const seed = 42
+
 function y(x)
     env_flags = ""
+    seed_str = string(seed)
 
     for i in 1:length(x)
         if x[i] > 0
@@ -11,7 +14,10 @@ function y(x)
 
     env_flags = "-C lto=off -C no-prepopulate-passes -C passes=name-anon-globals " * env_flags
 
-    cmd = `timeout -s9 30s cargo build --manifest-path ../../Benchmarks/heap_vec_nolib/Cargo.toml`
+    # cmd = `timeout -s9 30s cargo build --manifest-path ../../Benchmarks/heap_vec_nolib/Cargo.toml`
+    cmd = `timeout -s9 30s cargo build --manifest-path ../../Benchmarks/stack_nolib/Cargo.toml`
+    # cmd = `timeout -s9 30s cargo build --manifest-path ../../Benchmarks/heap_ndarray_nolib/Cargo.toml`
+    # cmd = `timeout -s9 30s cargo build --manifest-path ../../Benchmarks/heap_ndarray_dot/Cargo.toml`
 
     println(env_flags)
     println(cmd)
@@ -25,7 +31,7 @@ function y(x)
         return -1.0
     end
 
-    exec_time = @elapsed run(`../../Benchmarks/heap_vec_nolib/target/debug/matrix-multiply-raw`)
+    exec_time = @elapsed run(`../../Benchmarks/heap_vec_nolib/target/debug/matrix-multiply-raw $seed_str`)
 
     return exec_time
 end

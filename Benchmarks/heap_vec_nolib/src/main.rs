@@ -4,6 +4,7 @@ use rand::{Rng, SeedableRng, rngs::StdRng};
 
 use std::fs::File;
 use std::io::Write;
+use std::env;
 
 const N: usize = 512;
 
@@ -21,7 +22,11 @@ fn matrix_multiply(a: &Vec<Vec<f64>>,
 
 fn main()
 {
-    let seed = 42;
+    let args: Vec<String> = env::args().collect();
+
+    let seed: u64 = args[1].trim()
+                      .parse()
+                      .expect("Wanted a number");
 
     let mut rng = StdRng::seed_from_u64(seed);
 
@@ -44,11 +49,11 @@ fn main()
 
     let mut rng_file_id = rand::thread_rng();
 
-    let filename = format!("output-{}.txt", rng_file_id.gen_range(0, 100));
+    let filename = format!("output-{}.txt", rng_file_id.gen_range(0, 1000000));
 
     let mut output = File::create(filename).expect("Unable to create file");
 
-    for line in &m_a {
+    for line in &m_c {
         write!(&mut output, "{:?}", line).expect("Unable to write line");
         write!(&mut output, "\n").expect("Unable to write newline");
     }
