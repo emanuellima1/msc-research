@@ -1,7 +1,11 @@
 using ExperimentalDesign, StatsModels, GLM, DataFrames, Distributions, Random, CSV
 
+const seed = 42
+
 function y(x)
     env_flags = ""
+
+    seed_str = string(seed)
 
     for i in 1:length(x)
         if x[i] > 0
@@ -25,7 +29,7 @@ function y(x)
         return -1.0
     end
 
-    exec_time = @elapsed run(`../../Benchmarks/heap_vec_nolib/target/debug/matrix-multiply-raw`)
+    exec_time = @elapsed run(`../../Benchmarks/heap_vec_nolib/target/debug/matrix-multiply-test $seed_str`)
 
     return exec_time
 end

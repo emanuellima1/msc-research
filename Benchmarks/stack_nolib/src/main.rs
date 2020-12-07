@@ -49,7 +49,7 @@ fn main()
 
     let mut output = File::create(filename).expect("Unable to create file");
 
-    for line in &c {
+    for line in c.iter() {
         write!(&mut output, "{:?}", line).expect("Unable to write line");
         write!(&mut output, "\n").expect("Unable to write newline");
     }

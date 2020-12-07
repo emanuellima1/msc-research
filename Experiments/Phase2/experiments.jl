@@ -31,7 +31,7 @@ function y(x)
         return -1.0
     end
 
-    exec_time = @elapsed run(`../../Benchmarks/heap_vec_nolib/target/debug/matrix-multiply-raw $seed_str`)
+    exec_time = @elapsed run(`../../Benchmarks/heap_vec_nolib/target/debug/matrix-multiply-test $seed_str`)
 
     return exec_time
 end

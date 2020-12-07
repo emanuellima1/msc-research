@@ -1,8 +1,8 @@
 [package]
 
-name = "hello_world"
-version = "0.0.1"
-authors = [ "Your name <you@example.com>" ]
+name = "matrix_multiply_test"
+version = "0.1.0"
+authors = ["Emanuel Lima <emanuel-lima@outlook.com>"]
 
 [dependencies]
 rand = "0.7.3"
