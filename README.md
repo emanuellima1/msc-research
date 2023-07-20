@@ -9,16 +9,18 @@ LLVM autotuning experiments using matrix multiplication in Rust.
 - [ERAD 2020](https://eradsp2020.ncc.unesp.br/)
 - [Paper](Papers/ERAD_2020.pdf)
 
-Small experiment with 4 flags that demonstrated the impact that LLVM IR flag selection can have on the performance of Rust code.  
-Won the 2nd place on the scientific initiation track of the conference.  
+Small experiment with 4 flags that demonstrated the impact that LLVM IR flag selection can have on the performance of Rust code.
+Won 2nd place on the undergraduate research track of the conference.
 
 ### Phase 2
-
-#### Work in Progress
 
 - [Expansion of the search space](Scripts/Which_Flags/which_flags.csv)
 - [Screening and Random Sampling experiments](Experiments/Phase2/experiments.jl)
 - Statistical analysis of the results
+
+### Phase 3
+
+- Reorganizing for the MSc
 
 ## Interesting links
 
@@ -33,7 +35,3 @@ Won the 2nd place on the scientific initiation track of the conference.
 ```bash
 rustc -C help
 ```
-
-## Funded by
-
-- [Hewlett Packard Enterprise](https://www.hpe.com)
