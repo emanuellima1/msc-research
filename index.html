@@ -1,34 +1,38 @@
 <!DOCTYPE HTML>
 
 <html>
+
 <head>
-<title>Rustc Autotuning</title>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
-<link href="images/small_logo.png" rel="icon"/>
-<link href="assets/css/main.css" rel="stylesheet"/>
+    <title>Rustc Autotuning</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport" />
+    <link href="images/small_logo.png" rel="icon" />
+    <link href="assets/css/main.css" rel="stylesheet" />
 </head>
+
 <body class="is-preload">
-<!-- Wrapper -->
-<div id="wrapper">
-<!-- Main -->
-<div id="main">
-<div class="inner">
-<!-- Header -->
-<header id="header">
-<a class="logo" href="index.html"><strong>Emanuel Lima</strong></a>
-<ul class="icons">
-<li><a class="icon brands fa-github" href="https://github.com/emanuellima1/rustc-autotuning"><span class="label">Github</span></a></li>
-</ul>
-</header>
-<!-- Banner -->
-<section id="banner">
-<div class="content">
-<header>
-<h1>MSc Research Journal</h1>
-<p>A Design of Experiments Approach to Autotuning the Rust Compiler</p>
-</header>
-<p align="justify">Rustc is the official compiler of the Rust Programming Language. It uses the
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                <!-- Header -->
+                <header id="header">
+                    <a class="logo" href="index.html"><strong>Emanuel Lima</strong></a>
+                    <ul class="icons">
+                        <li><a class="icon brands fa-github"
+                                href="https://github.com/emanuellima1/rustc-autotuning"><span
+                                    class="label">Github</span></a></li>
+                    </ul>
+                </header>
+                <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <h1>MSc Research Journal</h1>
+                            <p>A Design of Experiments Approach to Autotuning the Rust Compiler</p>
+                        </header>
+                        <p align="justify">Rustc is the official compiler of the Rust Programming Language. It uses the
                             LLVM compiler
                             framework as a back end to generate binaries. LLVM transforms its Intermediate
                             Representation (LLVM IR) by executing a series of optimization passes, that can be toggled
@@ -39,62 +43,66 @@
                             the underlying search spaces. In this research we will seek to understand which LLVM flags
                             most impact the execution time of Rust programs, using the Design of Experiments
                             methodology.</p>
-</div>
-<span class="image object">
-<img alt="Rust Logo" src="images/logo_white.png"/>
-</span>
-</section>
-</div>
-</div>
-<!-- Sidebar -->
-<div id="sidebar">
-<div class="inner">
-<!-- Menu -->
-<nav id="menu">
-<header class="major">
-<h2>Menu</h2>
-</header>
-<ul>
-<li><a href="index.html">Homepage</a></li>
-<li>
-<span class="opener">First Experiments</span>
-<ul><li><a href="notebooks/example.html">Example</a></li></ul>
-</li>
-<li>
-<span class="opener">Documentation</span>
-<ul>
-<li><a href="https://rustc-dev-guide.rust-lang.org/part-2-intro.html">Rustc Guide</a>
-</li>
-<li><a href="https://doc.rust-lang.org/cargo/reference/profiles.html">Cargo Profiles</a>
-</li>
-<li><a href="https://doc.rust-lang.org/rustc/command-line-arguments.html">Rustc CLI</a>
-</li>
-<li><a href="https://doc.rust-lang.org/nightly/nightly-rustc/src/rustc_mir_transform/lib.rs.html#440-505">MIR
+                    </div>
+                    <span class="image object">
+                        <img alt="Rust Logo" src="images/logo_white.png" />
+                    </span>
+                </section>
+            </div>
+        </div>
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Menu</h2>
+                    </header>
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li>
+                            <span class="opener">First Experiments</span>
+                            <ul>
+                                <li><a href="notebooks/example.html">Example</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Documentation</span>
+                            <ul>
+                                <li><a href="https://rustc-dev-guide.rust-lang.org/part-2-intro.html">Rustc Guide</a>
+                                </li>
+                                <li><a href="https://doc.rust-lang.org/cargo/reference/profiles.html">Cargo Profiles</a>
+                                </li>
+                                <li><a href="https://doc.rust-lang.org/rustc/command-line-arguments.html">Rustc CLI</a>
+                                </li>
+                                <li><a
+                                        href="https://doc.rust-lang.org/nightly/nightly-rustc/src/rustc_mir_transform/lib.rs.html#440-505">MIR
                                         Optimization Code</a>
-</li>
-<li><a href="https://nnethercote.github.io/perf-book/benchmarking.html">Rust
+                                </li>
+                                <li><a href="https://nnethercote.github.io/perf-book/benchmarking.html">Rust
                                         Benchmarking</a>
-</li>
-<li><a href="https://releases.llvm.org/14.0.0/docs/index.html#llvm-design-overview">LLVM
+                                </li>
+                                <li><a href="https://releases.llvm.org/14.0.0/docs/index.html#llvm-design-overview">LLVM
                                         Architecture</a></li>
-<li><a href="https://releases.llvm.org/14.0.0/docs/Passes.html">LLVM Passes</a></li>
-</ul>
-</li>
-</ul>
-</nav>
-<!-- Footer -->
-<footer id="footer">
-<p class="copyright">© Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-</footer>
-</div>
-</div>
-</div>
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/write_links.js"></script>
-<script src="assets/js/main.js"></script>
+                                <li><a href="https://releases.llvm.org/14.0.0/docs/Passes.html">LLVM Passes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Footer -->
+                <footer id="footer">
+                    <p class="copyright">© Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/write_links.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
