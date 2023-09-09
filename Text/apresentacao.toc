@@ -1,0 +1,9 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{Introduction}{4}{0}{1}
+\beamer@sectionintoc {2}{Concepts}{8}{0}{2}
+\beamer@sectionintoc {3}{Related Works}{17}{0}{3}
+\beamer@sectionintoc {4}{Methodology}{19}{0}{4}
+\beamer@sectionintoc {5}{Results}{21}{0}{5}
+\beamer@subsectionintoc {5}{1}{Validation and Analysis}{22}{0}{5}
+\beamer@sectionintoc {6}{Conclusion and Future works}{24}{0}{6}
+\beamer@sectionintoc {7}{References}{26}{0}{7}

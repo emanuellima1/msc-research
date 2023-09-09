@@ -1,0 +1,15 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'artigo.blg'
+[51] biber:340> INFO - === qua jul 26, 2023, 11:51:52
+[63] Biber.pm:418> INFO - Reading 'artigo.bcf'
+[111] Biber.pm:978> INFO - Found 1 citekeys in bib section 0
+[121] Biber.pm:4401> INFO - Processing section 0
+[128] Biber.pm:4592> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
+[129] bibtex.pm:1713> INFO - LaTeX decoding ...
+[143] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliografia.bib'
+[180] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[180] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[180] Biber.pm:4221> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'pt-BR'
+[180] Biber.pm:4227> INFO - No sort tailoring available for locale 'pt-BR'
+[185] bbl.pm:654> INFO - Writing 'artigo.bbl' with encoding 'UTF-8'
+[186] bbl.pm:757> INFO - Output to artigo.bbl

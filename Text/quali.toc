@@ -1,0 +1,44 @@
+\babel@toc {english}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{Introduction}{1}{section*.8}%
+\contentsline {section}{Considerações de estilo}{2}{section*.10}%
+\contentsline {section}{Ferramentas bibliográficas}{2}{section*.11}%
+\contentsline {chapter}{\numberline {1}Theoretical Underpinnings}{5}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Usando este modelo}{7}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Instalação do \LaTeX {}}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Documentação sobre \LaTeX }{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Outros recursos (avançados)}{11}{subsection.3.1.1}%
+\contentsline {chapter}{\numberline {4}Do zero ao mínimo com \LaTeX {}}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Por que \LaTeX {}?}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Visão geral}{14}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Estrutura de um documento \LaTeX {}}{15}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Executando \LaTeX {} e comandos auxiliares}{16}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Mais sobre estrutura}{17}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Figuras e tabelas (\emph {floats})}{17}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Referências cruzadas}{18}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Referências bibliográficas e bibliografia}{18}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Fórmulas matemáticas}{19}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Formatação manual}{20}{section.4.10}%
+\contentsline {section}{\numberline {4.11}Versões do \LaTeX {}}{20}{section.4.11}%
+\contentsline {section}{\numberline {4.12}Limitações do \LaTeX {}}{21}{section.4.12}%
+\contentsline {chapter}{\numberline {5}Exemplos e dicas de \LaTeX {}}{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Bibliografia e referências}{23}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Identificando problemas}{24}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Modo matemático}{24}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Quebras de página}{26}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Figuras, gráficos e outros \emph {floats}}{26}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Tabelas}{29}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Caracteres especiais}{31}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Línguas e hifenização}{31}{section.5.8}%
+{\protect \large \protect \vspace {0pt plus 2\baselineskip minus 0pt}}
+\protect \pagebreak [2]
+\protect \vspace {.8\baselineskip }
+{\protect \large \protect \bfseries \protect \hspace {-1.3em}Appendixes\par }
+\protect \@afterheading 
+\contentsline {chapter}{\numberline {A}Código-fonte e pseudocódigo}{33}{appendix.A}%
+\vspace {2\baselineskip plus .5\baselineskip minus .5\baselineskip }
+\contentsline {chapter}{References}{35}{appendix*.19}%
+\contentsline {chapter}{Index}{37}{section*.20}%

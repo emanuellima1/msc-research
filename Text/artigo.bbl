@@ -1,0 +1,79 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{sbctemplate}{manual}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=ec1e365326980e4c5aa323251ef399ca}{%
+           family={Nedel},
+           familyi={N\bibinitperiod},
+           given={Luciana\bibnamedelima P.},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90020a67bac615126ff712521c158d3e}{%
+           family={Bordini},
+           familyi={B\bibinitperiod},
+           given={Rafael\bibnamedelima H.},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=452f5c890d011957f67fda8bb598f00b}{%
+           family={Wagner},
+           familyi={W\bibinitperiod},
+           given={Flávio\bibnamedelima Rech},
+           giveni={F\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43df5466a15067a65adf8511979ddbe6}{%
+           family={Hübner},
+           familyi={H\bibinitperiod},
+           given={Jomi\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d674a85cc03b8b7e56fd713ef4af746c}
+      \strng{fullhash}{c5a178a8bc2602623585e200bb25d0f6}
+      \strng{bibnamehash}{c5a178a8bc2602623585e200bb25d0f6}
+      \strng{authorbibnamehash}{c5a178a8bc2602623585e200bb25d0f6}
+      \strng{authornamehash}{d674a85cc03b8b7e56fd713ef4af746c}
+      \strng{authorfullhash}{c5a178a8bc2602623585e200bb25d0f6}
+      \field{labelalpha}{Ned+17}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Instructions for Authors of {SBC} Conferences Papers and Abstracts}
+      \field{urlday}{13}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb www.sbc.org.br/documentos-da-sbc/category/169-templates-para-artigos-e-capitulos-de-livros
+      \endverb
+      \verb{url}
+      \verb www.sbc.org.br/documentos-da-sbc/category/169-templates-para-artigos-e-capitulos-de-livros
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

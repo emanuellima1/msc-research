@@ -1,0 +1,362 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{bronevetsky02}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=4591171a1f41e9bff882df9e7f91533e}{%
+           family={Bronevetsky},
+           familyi={B\bibinitperiod},
+           given={Greg},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0f1dfefac0736d176b69aca8e35870ed}{%
+           family={Marques},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7f2014846734dae8a242e557fdafb65}{%
+           family={Pingali},
+           familyi={P\bibinitperiod},
+           given={Keshav},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0f9a905dd5047c4c3356de6e614e196}{%
+           family={Stodghill},
+           familyi={S\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{62f1ba33180a4ac7b76a3296d38ed4b5}
+      \strng{fullhash}{81930d77a959e90daad05bc52a31ce5a}
+      \strng{bibnamehash}{62f1ba33180a4ac7b76a3296d38ed4b5}
+      \strng{authorbibnamehash}{62f1ba33180a4ac7b76a3296d38ed4b5}
+      \strng{authornamehash}{62f1ba33180a4ac7b76a3296d38ed4b5}
+      \strng{authorfullhash}{81930d77a959e90daad05bc52a31ce5a}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{PPoPP'03: Proceedings of the 9th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming}
+      \field{eventday}{11}
+      \field{eventendday}{13}
+      \field{eventendmonth}{6}
+      \field{eventendyear}{2003}
+      \field{eventmonth}{6}
+      \field{eventyear}{2003}
+      \field{title}{Automated Application-Level Checkpointing of {MPI} Programs}
+      \field{venue}{San Diego, California}
+      \field{year}{2003}
+      \field{eventenddateera}{ce}
+      \field{eventdateera}{ce}
+      \true{nocite}
+      \field{pages}{84\bibrangedash 89}
+      \range{pages}{6}
+    \endentry
+    \entry{natbib}{manual}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8d668f2ff08c48a82cff87c087cdf12e}{%
+           family={Daly},
+           familyi={D\bibinitperiod},
+           given={Patrick\bibnamedelima W.},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8d668f2ff08c48a82cff87c087cdf12e}
+      \strng{fullhash}{8d668f2ff08c48a82cff87c087cdf12e}
+      \strng{bibnamehash}{8d668f2ff08c48a82cff87c087cdf12e}
+      \strng{authorbibnamehash}{8d668f2ff08c48a82cff87c087cdf12e}
+      \strng{authornamehash}{8d668f2ff08c48a82cff87c087cdf12e}
+      \strng{authorfullhash}{8d668f2ff08c48a82cff87c087cdf12e}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{month}{9}
+      \field{title}{Reference sheet for \texttt{natbib} usage}
+      \field{urlday}{20}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb mirrors.ctan.org/macros/latex/contrib/natbib/natnotes.pdf
+      \endverb
+      \verb{url}
+      \verb mirrors.ctan.org/macros/latex/contrib/natbib/natnotes.pdf
+      \endverb
+    \endentry
+    \entry{eco:09}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=eeb9256075038567a106101346ca2995}{%
+           family={Eco},
+           familyi={E\bibinitperiod},
+           given={Umberto},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Perspectiva}%
+      }
+      \strng{namehash}{eeb9256075038567a106101346ca2995}
+      \strng{fullhash}{eeb9256075038567a106101346ca2995}
+      \strng{bibnamehash}{eeb9256075038567a106101346ca2995}
+      \strng{authorbibnamehash}{eeb9256075038567a106101346ca2995}
+      \strng{authornamehash}{eeb9256075038567a106101346ca2995}
+      \strng{authorfullhash}{eeb9256075038567a106101346ca2995}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{22}
+      \field{note}{Tradução Gilson Cesar Cardoso de Souza}
+      \field{title}{Como se Faz uma Tese}
+      \field{year}{2009}
+      \true{nocite}
+    \endentry
+    \entry{FSF:GNU-GPL}{online}{}
+      \name{author}{1}{}{%
+        {{hash=cb96118d65be9f05ad10bd5cfdaf0f6d}{%
+           family={{Free Software Foundation}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=7f00b429e992d73afa545cd0bb8b6635}{%
+           family={FSF},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f00b429e992d73afa545cd0bb8b6635}
+      \strng{fullhash}{cb96118d65be9f05ad10bd5cfdaf0f6d}
+      \strng{bibnamehash}{7f00b429e992d73afa545cd0bb8b6635}
+      \strng{authorbibnamehash}{cb96118d65be9f05ad10bd5cfdaf0f6d}
+      \strng{authornamehash}{cb96118d65be9f05ad10bd5cfdaf0f6d}
+      \strng{authorfullhash}{cb96118d65be9f05ad10bd5cfdaf0f6d}
+      \strng{shortauthorbibnamehash}{7f00b429e992d73afa545cd0bb8b6635}
+      \strng{shortauthornamehash}{7f00b429e992d73afa545cd0bb8b6635}
+      \strng{shortauthorfullhash}{7f00b429e992d73afa545cd0bb8b6635}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{title}{{GNU} General Public License}
+      \field{urlday}{30}
+      \field{urlmonth}{1}
+      \field{urlyear}{2010}
+      \field{year}{2007}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb www.gnu.org/copyleft/gpl.html
+      \endverb
+      \verb{url}
+      \verb www.gnu.org/copyleft/gpl.html
+      \endverb
+    \endentry
+    \entry{biblatex}{manual}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=97afecc8539f253db93a1c737d62212c}{%
+           family={Lehman},
+           familyi={L\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=518f52ea2d73db1cfac0095db0482363}{%
+           family={Kime},
+           familyi={K\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e1cc18b9b6d3955ba487be6c20e4d7db}{%
+           family={Wemheuer},
+           familyi={W\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f551f4df6b727289e225343a679ca7ab}{%
+           family={Boruvka},
+           familyi={B\bibinitperiod},
+           given={Audrey},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93c71fed62527d4c8c6ae13ee771fcdd}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{34e4cbaf0989c9ce668a625f61e8360c}
+      \strng{fullhash}{661c56e3bb17dc444ea939264f83c2a3}
+      \strng{bibnamehash}{34e4cbaf0989c9ce668a625f61e8360c}
+      \strng{authorbibnamehash}{34e4cbaf0989c9ce668a625f61e8360c}
+      \strng{authornamehash}{34e4cbaf0989c9ce668a625f61e8360c}
+      \strng{authorfullhash}{661c56e3bb17dc444ea939264f83c2a3}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{month}{10}
+      \field{title}{The \texttt{biblatex} Package}
+      \field{urlday}{20}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb mirrors.ctan.org/macros/latex/contrib/biblatex/doc/biblatex.pdf
+      \endverb
+      \verb{url}
+      \verb mirrors.ctan.org/macros/latex/contrib/biblatex/doc/biblatex.pdf
+      \endverb
+    \endentry
+    \entry{MenaChalco08}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=71ce503ba3c3b92ec108ed37bd60637a}{%
+           family={Mena-Chalco},
+           familyi={M\bibinithyphendelim C\bibinitperiod},
+           given={Jesús\bibnamedelima P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6dca1a208577bad2912e05c4c198aca7}{%
+           family={Carrer},
+           familyi={C\bibinitperiod},
+           given={Helaine},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=78a5efadc0d8b55c71e0181c4aa63ea6}{%
+           family={Zana},
+           familyi={Z\bibinitperiod},
+           given={Yossi},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b77165594fdd6be3edeb3946cffc11f7}{%
+           family={Cesar-Jr.},
+           familyi={C\bibinithyphendelim J\bibinitperiod},
+           given={Roberto\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2f4017f01d55524f01e7544ede2b99e6}
+      \strng{fullhash}{b94b37ca37a307c1c7a8154ea8d2fd6a}
+      \strng{bibnamehash}{2f4017f01d55524f01e7544ede2b99e6}
+      \strng{authorbibnamehash}{2f4017f01d55524f01e7544ede2b99e6}
+      \strng{authornamehash}{2f4017f01d55524f01e7544ede2b99e6}
+      \strng{authorfullhash}{b94b37ca37a307c1c7a8154ea8d2fd6a}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE/ACM Transactions on Computational Biology and Bioinformatics}
+      \field{title}{Identification of Protein Coding Regions Using the Modified {G}abor-Wavelet Transform}
+      \field{volume}{5}
+      \field{year}{2008}
+      \true{nocite}
+      \field{pages}{198\bibrangedash 207}
+      \range{pages}{10}
+    \endentry
+    \entry{CORBA:spec}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=4d6b6fbad838f7618c462458711482fa}{%
+           family={{Object Management Group}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=5af83e3196bf99f440f31f2e1a6c9afe}{%
+           family={OMG},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{5af83e3196bf99f440f31f2e1a6c9afe}
+      \strng{fullhash}{4d6b6fbad838f7618c462458711482fa}
+      \strng{bibnamehash}{5af83e3196bf99f440f31f2e1a6c9afe}
+      \strng{authorbibnamehash}{4d6b6fbad838f7618c462458711482fa}
+      \strng{authornamehash}{4d6b6fbad838f7618c462458711482fa}
+      \strng{authorfullhash}{4d6b6fbad838f7618c462458711482fa}
+      \strng{shortauthorbibnamehash}{5af83e3196bf99f440f31f2e1a6c9afe}
+      \strng{shortauthornamehash}{5af83e3196bf99f440f31f2e1a6c9afe}
+      \strng{shortauthorfullhash}{5af83e3196bf99f440f31f2e1a6c9afe}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{note}{OMG Document 02-06-33}
+      \field{title}{{CORBA} v3.0 Specification}
+      \field{year}{2002}
+      \true{nocite}
+    \endentry
+    \entry{schmidt03:MSc}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ddc6301cfc4f0d93eb7736e5ad506357}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Rodrigo\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Instituto de Computação, Universidade de Campinas}%
+      }
+      \list{location}{1}{%
+        {Campinas, Brasil}%
+      }
+      \strng{namehash}{ddc6301cfc4f0d93eb7736e5ad506357}
+      \strng{fullhash}{ddc6301cfc4f0d93eb7736e5ad506357}
+      \strng{bibnamehash}{ddc6301cfc4f0d93eb7736e5ad506357}
+      \strng{authorbibnamehash}{ddc6301cfc4f0d93eb7736e5ad506357}
+      \strng{authornamehash}{ddc6301cfc4f0d93eb7736e5ad506357}
+      \strng{authorfullhash}{ddc6301cfc4f0d93eb7736e5ad506357}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{Coleta de Lixo para Protocolos de \emph{Checkpointing}}
+      \field{type}{mathesis}
+      \field{year}{2003}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,9 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'colinha.blg'
+[53] biber:340> INFO - === qua jul 26, 2023, 11:51:52
+[62] Biber.pm:418> INFO - Reading 'colinha.bcf'
+[123] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
+[131] bbl.pm:654> INFO - Writing 'colinha.bbl' with encoding 'UTF-8'
+[132] bbl.pm:757> INFO - Output to colinha.bbl
+[132] Biber.pm:130> WARN - The file 'colinha.bcf' does not contain any citations!
+[132] Biber.pm:132> INFO - WARNINGS: 1

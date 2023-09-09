@@ -1,0 +1,366 @@
+% Authors: Nelson Lago, Arthur Del Esposte and Eduardo Zambom Santana
+% Portions of the example contents: Arthur Del Esposte
+% This file is distributed under the MIT Licence
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PREÂMBULO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% A língua padrão é a última citada
+\documentclass[
+  xcolor={hyperref,svgnames,x11names,table},
+  hyperref={pdfencoding=unicode,plainpages=false,pdfpagelabels=true,breaklinks=true},
+  brazilian,english,
+]{beamer}
+
+% Vários pacotes e opções de configuração genéricos
+\input{extras/basics}
+\input{extras/languages}
+\input{extras/fonts}
+\input{extras/floats}
+\input{extras/index}
+\input{extras/bibconfig}
+\input{extras/hyperlinks}
+\hidelinks % desabilita cor/sublinhado dos links (URLs, refs etc.)
+\input{extras/source-code}
+\input{extras/utils}
+
+% Diretórios onde estão as figuras; com isso, não é preciso colocar o caminho
+% completo em \includegraphics (e nem a extensão).
+\graphicspath{{figuras/},{logos/}}
+
+% Comandos rápidos para mudar de língua:
+% \en -> muda para o inglês
+% \br -> muda para o português
+% \texten{blah} -> o texto "blah" é em inglês
+% \textbr{blah} -> o texto "blah" é em português
+\babeltags{br = brazilian, en = english}
+
+% Espaçamento simples
+\singlespacing
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% APARÊNCIA DO BEAMER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Possible paper sizes: a0, a0b, a1, a2, a3, a4.
+%% Possible orientations: portrait, landscape
+%% Font sizes can be changed using the scale option.
+\usepackage[size=a1,orientation=portrait,scale=1.8]{beamerposter}
+
+\usetheme{imeusp-poster} % carregado do diretório extras (veja basics.tex)
+
+% O padrão usa um tom de vermelho escuro como cor principal; a opção
+% "greeny" troca essa cor por um tom de verde; a opção "sandy" usa o
+% mesmo tom de verde mas modifica a cor padrão dos blocos para um tom
+% amarelado. "bluey" usa as cores do manual de identidade visual do IME.
+\usecolortheme[bluey]{imeusp} % carregado do diretório extras (veja basics.tex)
+
+%Remove ícones de navegação
+\beamertemplatenavigationsymbolsempty
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% COMANDOS PARA O USUÁRIO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Medidas feitas "a olho"
+\newcommand\singlecol{\column{.963\textwidth}}
+\newcommand\halfcol{\column{.46\textwidth}}
+\newcommand\onethirdcol{\column{.2922\textwidth}}
+\newcommand\twothirdscol{\column{.626\textwidth}}
+\newcommand\onefourthcol{\column{.2084\textwidth}}
+
+% Blocos de cor personalizada
+\newenvironment{coloredblock}[2]%
+  {
+    \setbeamercolor{block title}{fg=white,bg=#1!80!white}
+    \setbeamercolor{block body}{fg=darkgray,bg=#1!20!white}
+    \setbeamercolor{local structure}{fg=darkgray,bg=#1!20!white}
+    \begin{block}{#2}
+  }
+  {\end{block}}
+
+% Bibliografia. Apenas estilos bibliográficos derivados de numeric,
+% alphabetic, authortitle e authoryear (como beamer-ime) vão funcionar
+% bem aqui! Outros estilos, como abnt ou apa, vão gerar problemas de
+% layout que você vai precisar ajustar manualmente. Observe que, num
+% poster ou apresentação, provavelmente é uma boa ideia usar apenas
+% \nocite e não \cite.
+\usepackage[
+  %style=extras/plainnat-ime, % variante de autor-data, similar a plainnat
+  %style=alphabetic, % similar a alpha
+  %style=numeric, % comum em artigos
+  %style=authoryear-comp, % autor-data "padrão" do biblatex
+  %style=apa, % variante de autor-data, muito usado
+  %style=abnt,
+  style=extras/beamer-ime,
+]{biblatex}
+
+% Num poster, a bibliografia pode ficar em tamanho menor
+\renewcommand*{\bibfont}{\footnotesize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% METADADOS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% O arquivo com os dados bibliográficos para biblatex; você pode usar
+% este comando mais de uma vez para acrescentar múltiplos arquivos
+\addbibresource{bibliografia.bib}
+
+% Este comando permite acrescentar itens à lista de referências sem incluir
+% uma referência de fato no texto (pode ser usado em qualquer lugar do texto)
+%\nocite{bronevetsky02,schmidt03:MSc, FSF:GNU-GPL, CORBA:spec, MenaChalco08}
+% Com este comando, todos os itens do arquivo .bib são incluídos na lista
+% de referências
+%\nocite{*}
+
+\title[CCSL]{An example poster using \LaTeX{}\\by CCSL-IME/USP}
+
+\institute{Department of Computer Science --- University of São Paulo}
+
+\author[ccsl@ime.usp.br]{\textbf{ccsl.ime.usp.br}}
+
+\date{Month and day, year}
+
+% Optional foot image
+\footimage{\includegraphics[width=13cm]{ccsl-logo}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INÍCIO DO POSTER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% Em um poster não há \maketitle
+
+\begin{frame}[fragile]\centering
+
+\vspace{-.5\baselineskip}
+
+%%%%%%%% Uma coluna %%%%%%%%
+% (precisamos usar columns para alinhar com os demais blocos)
+\begin{columns}[T]
+
+  \singlecol
+
+  \begin{block}{The CCSL logo (full width)}
+    \centering
+    \vspace{2\baselineskip} % Espaço adicional dentro do bloco (cor de fundo)
+    \includegraphics[width=.9\textwidth]{ccsl-logo}
+    \vspace{1\baselineskip}
+  \end{block}
+
+\end{columns}
+
+    \vspace{1\baselineskip} % espaço adicional entre os blocos (branco)
+
+%%%%%%%% Quatro colunas %%%%%%%%
+\begin{columns}[T]
+
+  \onefourthcol
+
+  \begin{block}{One fourth width}
+    \centering
+    \vspace{.5\baselineskip}
+    \includegraphics[width=.9\textwidth]{ccsl-logo}
+    \vspace{.5\baselineskip}
+  \end{block}
+
+  \onefourthcol
+
+  \begin{block}{One fourth width}
+    \centering
+    \vspace{.5\baselineskip}
+    \includegraphics[width=.9\textwidth]{ccsl-logo}
+    \vspace{.5\baselineskip}
+  \end{block}
+
+  \onefourthcol
+
+  \begin{block}{One fourth width}
+    \centering
+    \vspace{.5\baselineskip}
+    \includegraphics[width=.9\textwidth]{ccsl-logo}
+    \vspace{.5\baselineskip}
+  \end{block}
+
+  \onefourthcol
+
+  \begin{block}{One fourth width}
+    \centering
+    \vspace{.5\baselineskip}
+    \includegraphics[width=.9\textwidth]{ccsl-logo}
+    \vspace{.5\baselineskip}
+  \end{block}
+
+\end{columns}
+
+\vspace{.5\baselineskip}
+
+%%%%%%% Duas colunas %%%%%%%%
+\begin{columns}[T]
+
+  \halfcol
+
+  \begin{block}{Pangrams (half width)}
+    \begin{itemize}
+      \item A \alert{pangram} is a sentence using every letter of a given
+            alphabet at least once.
+      \item Pangrams have been used to:
+      \begin{itemize}
+        \item display typefaces
+        \item test equipment
+        \item develop skills in handwriting, calligraphy, and keyboarding
+      \end{itemize}
+    \end{itemize}
+  \end{block}
+
+  \begin{block}{Examples of pangrams (half width)}
+    \begin{itemize}
+      \item In English
+      \begin{itemize}
+        \item The quick brown fox jumps over the lazy dog
+        \item Sphinx of black quartz, judge my vow
+        \item How vexingly quick daft zebras jump
+        \item Pack my box with five dozen liquor jugs
+      \end{itemize}
+      \item In Portuguese
+      \begin{itemize}
+        \item Vejo xá gritando que fez show sem playback
+        \item Já fiz vinho com toque de kiwi para belga sexy
+        \item Dê já multa ao punk sexy que fez viação chegar à web
+        \item Vejo galã sexy pôr quinze kiwis à força em baú achatado
+      \end{itemize}
+    \end{itemize}
+  \end{block}
+
+  \halfcol
+
+  \begin{block}{The IME/USP logo (half width)}
+    \centering
+    % Ajustando o tamanho para alinhar o final com a coluna ao lado
+    \vspace{.8\baselineskip}
+    \includegraphics[width=.75\textwidth,trim=0 0 70 0,clip]{ime-logo}\par
+    \vspace{.5\baselineskip}
+  \end{block}
+
+\end{columns}
+
+\vspace{.5\baselineskip}
+
+%%%%%%% Colunas assimétricas %%%%%%%%
+  \begin{columns}[T]
+
+  \twothirdscol
+
+  \begin{block}{Bibliography (assimetrical columns -- two thirds width)}
+    % "Estica" ligeiramente o bloco para alinhar com o final da outra coluna
+    \vspace{.26\baselineskip}
+    \nocite{FSF:GNU-GPL, MenaChalco08, biblatex}
+    \printbibliography
+    \vspace{.26\baselineskip}
+  \end{block}
+
+  \onethirdcol
+
+  \begin{block}{A Table (one third width)}
+  \begin{table}[H] % [H] é obrigatório com beamer!
+    \centering
+    \begin{tabular}{ccl}
+      \toprule
+      Code      & Abbreviation  & Name \\
+      \midrule
+      \texttt{A}  & Ala          & Alanine \\
+      \texttt{C}  & Cys          & Cysteine \\
+      \texttt{W}  & Trp          & Tryptophan \\
+      \texttt{Y}  & Tyr          & Tyrosine \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+
+  \end{block}
+
+\end{columns}
+
+\vspace{.5\baselineskip}
+
+%%%%%%%% Três colunas %%%%%%%%
+\begin{columns}[T]
+
+  \onethirdcol
+
+    \begin{block}{Sponsors (one third width)}
+    \vspace{.5\baselineskip}
+    \centering
+    \begin{figure}[H] % [H] é obrigatório com beamer!
+      \begin{subfigure}[c]{.3\textwidth}
+        \centering
+        %\raisebox{.0972\baselineskip}{\includegraphics[height=.927\baselineskip]{fapesp-logo}}
+        \includegraphics[width=.9\textwidth]{ccsl-logo}
+      \end{subfigure}
+      \begin{subfigure}[c]{.3\textwidth}
+        \centering
+        %\raisebox{-.53496\baselineskip}{\includegraphics[height=2.16\baselineskip]{capes-logo}}
+        \includegraphics[width=.9\textwidth]{ccsl-logo}
+      \end{subfigure}
+      \begin{subfigure}[c]{.3\textwidth}
+        \centering
+        %\includegraphics[height=1.08\baselineskip]{cnpq-logo}
+        \includegraphics[width=.9\textwidth]{ccsl-logo}
+      \end{subfigure}
+    \end{figure}
+  \end{block}
+
+  \onethirdcol
+
+  \begin{block}{Sponsors (one third width)}
+    \vspace{.5\baselineskip}
+    \centering
+    \begin{figure}[H] % [H] é obrigatório com beamer!
+      \begin{subfigure}[c]{.3\textwidth}
+        \centering
+        %\raisebox{.0972\baselineskip}{\includegraphics[height=.927\baselineskip]{fapesp-logo}}
+        \includegraphics[width=.9\textwidth]{ccsl-logo}
+      \end{subfigure}
+      \begin{subfigure}[c]{.3\textwidth}
+        \centering
+        %\raisebox{-.53496\baselineskip}{\includegraphics[height=2.16\baselineskip]{capes-logo}}
+        \includegraphics[width=.9\textwidth]{ccsl-logo}
+      \end{subfigure}
+      \begin{subfigure}[c]{.3\textwidth}
+        \centering
+        %\includegraphics[height=1.08\baselineskip]{cnpq-logo}
+        \includegraphics[width=.9\textwidth]{ccsl-logo}
+      \end{subfigure}
+    \end{figure}
+  \end{block}
+
+  \onethirdcol
+
+  \begin{block}{Sponsors (one third width)}
+    \vspace{.5\baselineskip}
+    \centering
+    \begin{figure}[H] % [H] é obrigatório com beamer!
+      \begin{subfigure}[c]{.3\textwidth}
+        \centering
+        %\raisebox{.0972\baselineskip}{\includegraphics[height=.927\baselineskip]{fapesp-logo}}
+        \includegraphics[width=.9\textwidth]{ccsl-logo}
+      \end{subfigure}
+      \begin{subfigure}[c]{.3\textwidth}
+        \centering
+        %\raisebox{-.53496\baselineskip}{\includegraphics[height=2.16\baselineskip]{capes-logo}}
+        \includegraphics[width=.9\textwidth]{ccsl-logo}
+      \end{subfigure}
+      \begin{subfigure}[c]{.3\textwidth}
+        \centering
+        %\includegraphics[height=1.08\baselineskip]{cnpq-logo}
+        \includegraphics[width=.9\textwidth]{ccsl-logo}
+      \end{subfigure}
+    \end{figure}
+  \end{block}
+
+\end{columns}
+
+\end{frame}
+
+\end{document}

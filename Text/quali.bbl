@@ -1,0 +1,695 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{gridftp}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1605332064e1021702c6a15cb21132c1}{%
+           family={Allcock},
+           familyi={A\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1605332064e1021702c6a15cb21132c1}
+      \strng{fullhash}{1605332064e1021702c6a15cb21132c1}
+      \strng{bibnamehash}{1605332064e1021702c6a15cb21132c1}
+      \strng{authorbibnamehash}{1605332064e1021702c6a15cb21132c1}
+      \strng{authornamehash}{1605332064e1021702c6a15cb21132c1}
+      \strng{authorfullhash}{1605332064e1021702c6a15cb21132c1}
+      \field{labelalpha}{All03}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{GridFTP} Protocol Specification. {Global Grid Forum} Recommendation ({GFD}.20)}
+      \field{year}{2003}
+    \endentry
+    \entry{alves03:simi}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=206353fb8f80c4986b7ddbcab5e972b7}{%
+           family={Alves},
+           familyi={A\bibinitperiod},
+           given={Carlos\bibnamedelimb E.\bibnamedelimi R.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=073ed5b897f90dc39a8d920be48ab272}{%
+           family={Cáceres},
+           familyi={C\bibinitperiod},
+           given={Edson\bibnamedelima N.},
+           giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79492b3b4704b729b7c5bb0a9b87345c}{%
+           family={Dehne},
+           familyi={D\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f3617d7f595a18fc62136814211c36a}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Siang\bibnamedelima W.},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{b146ab810da375e41574d046e88a7a86}
+      \strng{fullhash}{6356f4f566fb0d219040c04e454e3e5b}
+      \strng{bibnamehash}{6356f4f566fb0d219040c04e454e3e5b}
+      \strng{authorbibnamehash}{6356f4f566fb0d219040c04e454e3e5b}
+      \strng{authornamehash}{b146ab810da375e41574d046e88a7a86}
+      \strng{authorfullhash}{6356f4f566fb0d219040c04e454e3e5b}
+      \field{labelalpha}{Alv+03}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ICCSA'03: The 2003 International Conference on Computational Science and its Applications}
+      \field{month}{5}
+      \field{title}{A Parallel Wavefront Algorithm for Efficient Biological Sequence Comparison}
+      \field{year}{2003}
+      \field{pages}{249\bibrangedash 258}
+      \range{pages}{10}
+    \endentry
+    \entry{alvisi99:analysisCIC}{report}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=b837a18883176d2f82d17c4fcb2a300b}{%
+           family={Alvisi},
+           familyi={A\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e2b6fa6272689884f00760f903245092}{%
+           family={Elnozahy},
+           familyi={E\bibinitperiod},
+           given={Elmootazbellah},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc6c00801c40d1d1ab266b8bfeceb53e}{%
+           family={Rao},
+           familyi={R\bibinitperiod},
+           given={Sriram\bibnamedelima S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de2e0c135816cbef19413e128a9d60ac}{%
+           family={Husain},
+           familyi={H\bibinitperiod},
+           given={Syed\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=25b2f5a13385851969550ec4f956bb59}{%
+           family={Mel},
+           familyi={M\bibinitperiod},
+           given={Asanka\bibnamedelima Del},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Department of Computer Science, University of Texas at Austin}%
+      }
+      \list{location}{1}{%
+        {Austin, USA}%
+      }
+      \strng{namehash}{06f5382800dadb5e72e9a2b0d9957e1b}
+      \strng{fullhash}{833f614507724b23316eeb743cb35070}
+      \strng{bibnamehash}{833f614507724b23316eeb743cb35070}
+      \strng{authorbibnamehash}{833f614507724b23316eeb743cb35070}
+      \strng{authornamehash}{06f5382800dadb5e72e9a2b0d9957e1b}
+      \strng{authorfullhash}{833f614507724b23316eeb743cb35070}
+      \field{labelalpha}{Alv+99}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{TR-99-01}
+      \field{title}{An Analysis of Comunication-Induced Checkpointing}
+      \field{type}{techreport}
+      \field{year}{1999}
+    \endentry
+    \entry{bobaoglu93:concepts}{incollection}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=076295e13847a1c03f06d3d9dbf0f4f1}{%
+           family={Babaoglu},
+           familyi={B\bibinitperiod},
+           given={Ozalp},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d9e087e51bcc6bccce82700b8e7df265}{%
+           family={Marzullo},
+           familyi={M\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=c61969d4cf13f3deaae1287a4fa7882e}{%
+           family={Mullender},
+           familyi={M\bibinitperiod},
+           given={Sape},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{879aedcd3b90e6753a5ffe80238d1732}
+      \strng{fullhash}{879aedcd3b90e6753a5ffe80238d1732}
+      \strng{bibnamehash}{879aedcd3b90e6753a5ffe80238d1732}
+      \strng{authorbibnamehash}{879aedcd3b90e6753a5ffe80238d1732}
+      \strng{authornamehash}{879aedcd3b90e6753a5ffe80238d1732}
+      \strng{authorfullhash}{879aedcd3b90e6753a5ffe80238d1732}
+      \strng{editorbibnamehash}{c61969d4cf13f3deaae1287a4fa7882e}
+      \strng{editornamehash}{c61969d4cf13f3deaae1287a4fa7882e}
+      \strng{editorfullhash}{c61969d4cf13f3deaae1287a4fa7882e}
+      \field{labelalpha}{BM93}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Distributed Systems}
+      \field{edition}{2}
+      \field{title}{Consistent Global States of Distributed Systems: Fundamental Concepts and Mechanisms}
+      \field{year}{1993}
+      \field{pages}{55\bibrangedash 96}
+      \range{pages}{42}
+    \endentry
+    \entry{blanco2016can}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=71fd27280c09e2aae953881c6f22f388}{%
+           family={Blanco-Cuaresma},
+           familyi={B\bibinithyphendelim C\bibinitperiod},
+           given={Sergi},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e4a881b62839acf55ea0d3ae024e9c64}{%
+           family={Bolmont},
+           familyi={B\bibinitperiod},
+           given={Emeline},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{27c8c61594795df09536b25311ad430f}
+      \strng{fullhash}{27c8c61594795df09536b25311ad430f}
+      \strng{bibnamehash}{27c8c61594795df09536b25311ad430f}
+      \strng{authorbibnamehash}{27c8c61594795df09536b25311ad430f}
+      \strng{authornamehash}{27c8c61594795df09536b25311ad430f}
+      \strng{authorfullhash}{27c8c61594795df09536b25311ad430f}
+      \field{labelalpha}{BB16}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the International Astronomical Union}
+      \field{number}{S325}
+      \field{title}{What can the programming language {Rust} do for astrophysics?}
+      \field{volume}{12}
+      \field{year}{2016}
+      \field{pages}{341\bibrangedash 344}
+      \range{pages}{4}
+    \endentry
+    \entry{natbib}{manual}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8d668f2ff08c48a82cff87c087cdf12e}{%
+           family={Daly},
+           familyi={D\bibinitperiod},
+           given={Patrick\bibnamedelima W.},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8d668f2ff08c48a82cff87c087cdf12e}
+      \strng{fullhash}{8d668f2ff08c48a82cff87c087cdf12e}
+      \strng{bibnamehash}{8d668f2ff08c48a82cff87c087cdf12e}
+      \strng{authorbibnamehash}{8d668f2ff08c48a82cff87c087cdf12e}
+      \strng{authornamehash}{8d668f2ff08c48a82cff87c087cdf12e}
+      \strng{authorfullhash}{8d668f2ff08c48a82cff87c087cdf12e}
+      \field{labelalpha}{Dal10}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{month}{9}
+      \field{title}{Reference sheet for \texttt{natbib} usage}
+      \field{urlday}{20}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb mirrors.ctan.org/macros/latex/contrib/natbib/natnotes.pdf
+      \endverb
+      \verb{url}
+      \verb mirrors.ctan.org/macros/latex/contrib/natbib/natnotes.pdf
+      \endverb
+    \endentry
+    \entry{fowler04:designDead}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=312ac886938a9b2be4f8eb607567fe4c}{%
+           family={Fowler},
+           familyi={F\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{fullhash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{bibnamehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{authorbibnamehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{authornamehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{authorfullhash}{312ac886938a9b2be4f8eb607567fe4c}
+      \field{labelalpha}{Fow04}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Is Design Dead?}
+      \field{urlday}{30}
+      \field{urlmonth}{1}
+      \field{urlyear}{2010}
+      \field{year}{2004}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb martinfowler.com/articles/designDead.html
+      \endverb
+      \verb{url}
+      \verb martinfowler.com/articles/designDead.html
+      \endverb
+    \endentry
+    \entry{FSF:GNU-GPL}{online}{}
+      \name{author}{1}{}{%
+        {{hash=cb96118d65be9f05ad10bd5cfdaf0f6d}{%
+           family={{Free Software Foundation}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=7f00b429e992d73afa545cd0bb8b6635}{%
+           family={FSF},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f00b429e992d73afa545cd0bb8b6635}
+      \strng{fullhash}{cb96118d65be9f05ad10bd5cfdaf0f6d}
+      \strng{bibnamehash}{7f00b429e992d73afa545cd0bb8b6635}
+      \strng{authorbibnamehash}{cb96118d65be9f05ad10bd5cfdaf0f6d}
+      \strng{authornamehash}{cb96118d65be9f05ad10bd5cfdaf0f6d}
+      \strng{authorfullhash}{cb96118d65be9f05ad10bd5cfdaf0f6d}
+      \strng{shortauthorbibnamehash}{7f00b429e992d73afa545cd0bb8b6635}
+      \strng{shortauthornamehash}{7f00b429e992d73afa545cd0bb8b6635}
+      \strng{shortauthorfullhash}{7f00b429e992d73afa545cd0bb8b6635}
+      \field{labelalpha}{FSF07}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{title}{{GNU} General Public License}
+      \field{urlday}{30}
+      \field{urlmonth}{1}
+      \field{urlyear}{2010}
+      \field{year}{2007}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb www.gnu.org/copyleft/gpl.html
+      \endverb
+      \verb{url}
+      \verb www.gnu.org/copyleft/gpl.html
+      \endverb
+    \endentry
+    \entry{garcia01:PhD}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=87623975f72a977cb786a45599d598c2}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={Islene\bibnamedelima C.},
+           giveni={I\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Instituto de Computação, Universidade de Campinas}%
+      }
+      \list{location}{1}{%
+        {Campinas, Brasil}%
+      }
+      \strng{namehash}{87623975f72a977cb786a45599d598c2}
+      \strng{fullhash}{87623975f72a977cb786a45599d598c2}
+      \strng{bibnamehash}{87623975f72a977cb786a45599d598c2}
+      \strng{authorbibnamehash}{87623975f72a977cb786a45599d598c2}
+      \strng{authornamehash}{87623975f72a977cb786a45599d598c2}
+      \strng{authorfullhash}{87623975f72a977cb786a45599d598c2}
+      \field{labelalpha}{Gar01}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Visões Progressivas de Computações Distribuídas}
+      \field{type}{phdthesis}
+      \field{year}{2001}
+    \endentry
+    \entry{Knuth:96}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ec08e6f01da5f3814f28a70c89c64656}{%
+           family={Knuth},
+           familyi={K\bibinitperiod},
+           given={Donald\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ca0733f7a6a0267291e74aeac45cf39}{%
+           family={Larrabee},
+           familyi={L\bibinitperiod},
+           given={Tracy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=30c6d2b761a77719052fcc00bf2db37c}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={Paul\bibnamedelima M.},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Mathematical Association of America}%
+      }
+      \strng{namehash}{bdb7650fb32d3ea7897427911d6d66f6}
+      \strng{fullhash}{2f43e5174fe728abb34620c66b868f79}
+      \strng{bibnamehash}{2f43e5174fe728abb34620c66b868f79}
+      \strng{authorbibnamehash}{2f43e5174fe728abb34620c66b868f79}
+      \strng{authornamehash}{bdb7650fb32d3ea7897427911d6d66f6}
+      \strng{authorfullhash}{2f43e5174fe728abb34620c66b868f79}
+      \field{labelalpha}{KLR96}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{title}{Mathematical Writing}
+      \field{year}{1996}
+    \endentry
+    \entry{biblatex}{manual}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=97afecc8539f253db93a1c737d62212c}{%
+           family={Lehman},
+           familyi={L\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=518f52ea2d73db1cfac0095db0482363}{%
+           family={Kime},
+           familyi={K\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e1cc18b9b6d3955ba487be6c20e4d7db}{%
+           family={Wemheuer},
+           familyi={W\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f551f4df6b727289e225343a679ca7ab}{%
+           family={Boruvka},
+           familyi={B\bibinitperiod},
+           given={Audrey},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93c71fed62527d4c8c6ae13ee771fcdd}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{34e4cbaf0989c9ce668a625f61e8360c}
+      \strng{fullhash}{661c56e3bb17dc444ea939264f83c2a3}
+      \strng{bibnamehash}{661c56e3bb17dc444ea939264f83c2a3}
+      \strng{authorbibnamehash}{661c56e3bb17dc444ea939264f83c2a3}
+      \strng{authornamehash}{34e4cbaf0989c9ce668a625f61e8360c}
+      \strng{authorfullhash}{661c56e3bb17dc444ea939264f83c2a3}
+      \field{labelalpha}{Leh+18}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{month}{10}
+      \field{title}{The \texttt{biblatex} Package}
+      \field{urlday}{20}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb mirrors.ctan.org/macros/latex/contrib/biblatex/doc/biblatex.pdf
+      \endverb
+      \verb{url}
+      \verb mirrors.ctan.org/macros/latex/contrib/biblatex/doc/biblatex.pdf
+      \endverb
+    \endentry
+    \entry{levy2017case}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=1e49008ed2c3bd93f43fd81ff24885f0}{%
+           family={Levy},
+           familyi={L\bibinitperiod},
+           given={Amit},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3fbd105a6779955899177dbbf2bc8bc1}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={Bradford},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa6ec7311a804c77e02a108ebcc7bdaa}{%
+           family={Ghena},
+           familyi={G\bibinitperiod},
+           given={Branden},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6c3e8921ad572b99514499227496d134}{%
+           family={Pannuto},
+           familyi={P\bibinitperiod},
+           given={Pat},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13cf086b1a3a5edd2816cffebf47e710}{%
+           family={Dutta},
+           familyi={D\bibinitperiod},
+           given={Prabal},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=64657013bce77454fd72c592c7225abf}{%
+           family={Levis},
+           familyi={L\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8c631cbbef261a0ce0829d7afe4acca9}
+      \strng{fullhash}{38ed74bb56f6aaf094d85c1fd3095d99}
+      \strng{bibnamehash}{8c631cbbef261a0ce0829d7afe4acca9}
+      \strng{authorbibnamehash}{8c631cbbef261a0ce0829d7afe4acca9}
+      \strng{authornamehash}{8c631cbbef261a0ce0829d7afe4acca9}
+      \strng{authorfullhash}{38ed74bb56f6aaf094d85c1fd3095d99}
+      \field{labelalpha}{Lev+17}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 8th Asia-Pacific Workshop on Systems}
+      \field{title}{The case for writing a kernel in {Rust}}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+    \endentry
+    \entry{matsakis2014rust}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b9ab334450ee042b091f8f30fe01d877}{%
+           family={Matsakis},
+           familyi={M\bibinitperiod},
+           given={Nicholas\bibnamedelima D},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6feb88497518ddaf6a77915bf7ad8ea8}{%
+           family={Klock},
+           familyi={K\bibinitperiod},
+           given={Felix\bibnamedelima S},
+           giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{f9252f0169f4af867d643bb0f2cfc0dd}
+      \strng{fullhash}{f9252f0169f4af867d643bb0f2cfc0dd}
+      \strng{bibnamehash}{f9252f0169f4af867d643bb0f2cfc0dd}
+      \strng{authorbibnamehash}{f9252f0169f4af867d643bb0f2cfc0dd}
+      \strng{authornamehash}{f9252f0169f4af867d643bb0f2cfc0dd}
+      \strng{authorfullhash}{f9252f0169f4af867d643bb0f2cfc0dd}
+      \field{labelalpha}{MK14}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM SIGAda Ada Letters}
+      \field{number}{3}
+      \field{title}{The {Rust} language}
+      \field{volume}{34}
+      \field{year}{2014}
+      \field{pages}{103\bibrangedash 104}
+      \range{pages}{2}
+    \endentry
+    \entry{floats2014}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9355edd511e3f6fdd880ee98722a53fb}{%
+           family={Mittelbach},
+           familyi={M\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Portland ({OR}), {USA}}%
+      }
+      \list{publisher}{1}{%
+        {\TeX{} {Users} {Group}}%
+      }
+      \strng{namehash}{9355edd511e3f6fdd880ee98722a53fb}
+      \strng{fullhash}{9355edd511e3f6fdd880ee98722a53fb}
+      \strng{bibnamehash}{9355edd511e3f6fdd880ee98722a53fb}
+      \strng{authorbibnamehash}{9355edd511e3f6fdd880ee98722a53fb}
+      \strng{authornamehash}{9355edd511e3f6fdd880ee98722a53fb}
+      \strng{authorfullhash}{9355edd511e3f6fdd880ee98722a53fb}
+      \field{labelalpha}{Mit14}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journalsubtitle}{Communications of the \TeX{} Users Group}
+      \field{journaltitle}{{TUGboat}}
+      \field{number}{3}
+      \field{title}{How to influence the position of float environments like figure and table in {\LaTeX}?}
+      \field{urlday}{9}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{volume}{35}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb tug.org/TUGboat/tb35-3/tb111mitt-float.pdf
+      \endverb
+      \verb{url}
+      \verb tug.org/TUGboat/tb35-3/tb111mitt-float.pdf
+      \endverb
+    \endentry
+    \entry{schmidt03:MSc}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ddc6301cfc4f0d93eb7736e5ad506357}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Rodrigo\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Instituto de Computação, Universidade de Campinas}%
+      }
+      \list{location}{1}{%
+        {Campinas, Brasil}%
+      }
+      \strng{namehash}{ddc6301cfc4f0d93eb7736e5ad506357}
+      \strng{fullhash}{ddc6301cfc4f0d93eb7736e5ad506357}
+      \strng{bibnamehash}{ddc6301cfc4f0d93eb7736e5ad506357}
+      \strng{authorbibnamehash}{ddc6301cfc4f0d93eb7736e5ad506357}
+      \strng{authornamehash}{ddc6301cfc4f0d93eb7736e5ad506357}
+      \strng{authorfullhash}{ddc6301cfc4f0d93eb7736e5ad506357}
+      \field{labelalpha}{Sch03}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{Coleta de Lixo para Protocolos de \emph{Checkpointing}}
+      \field{type}{mathesis}
+      \field{year}{2003}
+    \endentry
+    \entry{rustc-dev-guide}{manual}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f0d5fb5b87cc52e92b8ca896555849a5}{%
+           family={{The Rust Project Developers}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{f0d5fb5b87cc52e92b8ca896555849a5}
+      \strng{fullhash}{f0d5fb5b87cc52e92b8ca896555849a5}
+      \strng{bibnamehash}{f0d5fb5b87cc52e92b8ca896555849a5}
+      \strng{authorbibnamehash}{f0d5fb5b87cc52e92b8ca896555849a5}
+      \strng{authornamehash}{f0d5fb5b87cc52e92b8ca896555849a5}
+      \strng{authorfullhash}{f0d5fb5b87cc52e92b8ca896555849a5}
+      \field{labelalpha}{The18}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{{Rust Compiler Development Guide}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://github.com/rust-lang/rustc-dev-guide
+      \endverb
+      \verb{url}
+      \verb https://github.com/rust-lang/rustc-dev-guide
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

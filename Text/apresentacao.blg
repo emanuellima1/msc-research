@@ -1,0 +1,15 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'apresentacao.blg'
+[50] biber:340> INFO - === qua jul 26, 2023, 11:51:53
+[61] Biber.pm:418> INFO - Reading 'apresentacao.bcf'
+[106] Biber.pm:978> INFO - Found 8 citekeys in bib section 0
+[114] Biber.pm:4401> INFO - Processing section 0
+[121] Biber.pm:4592> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
+[122] bibtex.pm:1713> INFO - LaTeX decoding ...
+[135] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliografia.bib'
+[196] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[196] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[196] Biber.pm:4221> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[196] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[204] bbl.pm:654> INFO - Writing 'apresentacao.bbl' with encoding 'UTF-8'
+[208] bbl.pm:757> INFO - Output to apresentacao.bbl

@@ -1,0 +1,108 @@
+\begin{theindex}
+{\bfseries B}\nopagebreak
+
+  \item biber, \hyperpage{18}
+  \item biblatex, \hyperpage{18, 19}, \hyperpage{23, 24}
+  \item bibtex, \hyperpage{18}, \hyperpage{24}
+
+  \indexspace
+{\bfseries C}\nopagebreak
+
+  \item Captions, \hyperindexformat{\see{Legendas}}{x}
+  \item Código-fonte, \hyperindexformat{\see{Floats}}{x}
+
+  \indexspace
+{\bfseries E}\nopagebreak
+
+  \item Equações, \hyperindexformat{\see{Modo matemático}}{x}
+
+  \indexspace
+{\bfseries F}\nopagebreak
+
+  \item Figuras, \hyperindexformat{\see{Floats}}{x}
+  \item Floats, \hyperpage{2}, \hyperpage{26, 27}, \hyperpage{29}
+    \subitem Algoritmo, \hyperindexformat{\see{Floats, ordem}}{x}
+    \subitem ordem, \hyperpage{18}
+  \item Formatação, \hyperpage{5}
+  \item Fórmulas, \hyperindexformat{\see{Modo matemático}}{x}
+
+  \indexspace
+{\bfseries G}\nopagebreak
+
+  \item Google Scholar, \hyperpage{2}
+
+  \indexspace
+{\bfseries I}\nopagebreak
+
+  \item Inglês, \hyperindexformat{\see{Língua estrangeira}}{x}
+
+  \indexspace
+{\bfseries J}\nopagebreak
+
+  \item Java, \hyperpage{28}
+
+  \indexspace
+{\bfseries L}\nopagebreak
+
+  \item Legendas, \hyperpage{2}, \hyperpage{18}, \hyperpage{26}
+  \item Língua estrangeira, \hyperpage{2}
+
+  \indexspace
+{\bfseries M}\nopagebreak
+
+  \item Mendeley, \hyperpage{3}, \hyperpage{19}
+  \item Modo matemático, \hyperpage{24}
+
+  \indexspace
+{\bfseries N}\nopagebreak
+
+  \item natbib, \hyperpage{2}, \hyperpage{18}
+  \item Notas de rodapé, \hyperpage{2}, \hyperpage{17}
+
+  \indexspace
+{\bfseries P}\nopagebreak
+
+  \item Palavras estrangeiras, 
+		\hyperindexformat{\see{Língua estrangeira}}{x}
+
+  \indexspace
+{\bfseries R}\nopagebreak
+
+  \item Rodapé, notas, \hyperindexformat{\see{Notas de rodapé}}{x}
+
+  \indexspace
+{\bfseries S}\nopagebreak
+
+  \item Scopus, \hyperpage{2}
+  \item Subcaptions, \hyperindexformat{\see{Subfiguras}}{x}
+  \item Subfiguras, \hyperpage{26}
+  \item Sublegendas, \hyperindexformat{\see{Subfiguras}}{x}
+
+  \indexspace
+{\bfseries T}\nopagebreak
+
+  \item Tabelas, \hyperindexformat{\see{Floats}}{x}
+  \item Tese/Dissertação
+    \subitem itens obrigatórios, \hyperpage{5}
+    \subitem itens opcionais, \hyperpage{5}
+    \subitem versões, \hyperpage{5}
+
+  \indexspace
+{\bfseries V}\nopagebreak
+
+  \item Versão corrigida, 
+		\hyperindexformat{\see{Tese/Dissertação, versões}}{x}
+  \item Versão original, 
+		\hyperindexformat{\see{Tese/Dissertação, versões}}{x}
+
+  \indexspace
+{\bfseries W}\nopagebreak
+
+  \item Web of Science, \hyperpage{2}
+
+  \indexspace
+{\bfseries Z}\nopagebreak
+
+  \item Zotero, \hyperpage{3}, \hyperpage{19}
+
+\end{theindex}
