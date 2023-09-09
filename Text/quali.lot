@@ -12,3 +12,7 @@
 \contentsline {table}{\numberline {5.2}{\ignorespaces Exemplo de tabela com valores numéricos.}}{29}{table.5.2}%
 \contentsline {table}{\numberline {5.3}{\ignorespaces Exemplo de tabela similar a uma ficha.\relax }}{32}{table.caption.17}%
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces LLVM Analysis Passes\relax }}{35}{table.A.1}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {B.1}{\ignorespaces LLVM Transformation Passes\relax }}{37}{table.B.1}%

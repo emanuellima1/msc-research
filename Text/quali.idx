@@ -1,27 +1,23 @@
-\indexentry{Inglês|hyperindexformat{\see{Língua estrangeira}}}{x}
-\indexentry{Figuras|hyperindexformat{\see{Floats}}}{x}
-\indexentry{Tabelas|hyperindexformat{\see{Floats}}}{x}
-\indexentry{Código-fonte|hyperindexformat{\see{Floats}}}{x}
-\indexentry{Subcaptions|hyperindexformat{\see{Subfiguras}}}{x}
-\indexentry{Sublegendas|hyperindexformat{\see{Subfiguras}}}{x}
-\indexentry{Equações|hyperindexformat{\see{Modo matemático}}}{x}
-\indexentry{Fórmulas|hyperindexformat{\see{Modo matemático}}}{x}
-\indexentry{Rodapé, notas|hyperindexformat{\see{Notas de rodapé}}}{x}
-\indexentry{Captions|hyperindexformat{\see{Legendas}}}{x}
-\indexentry{Versão original|hyperindexformat{\see{Tese/Dissertação, versões}}}{x}
-\indexentry{Versão corrigida|hyperindexformat{\see{Tese/Dissertação, versões}}}{x}
-\indexentry{Palavras estrangeiras|hyperindexformat{\see{Língua estrangeira}}}{x}
-\indexentry{Floats!Algoritmo|hyperindexformat{\see{Floats, ordem}}}{x}
-\indexentry{natbib|hyperpage}{2}
-\indexentry{Língua estrangeira|hyperpage}{2}
-\indexentry{Legendas|hyperpage}{2}
-\indexentry{Floats|hyperpage}{2}
-\indexentry{Google Scholar|hyperpage}{2}
-\indexentry{Web of Science|hyperpage}{2}
-\indexentry{Scopus|hyperpage}{2}
-\indexentry{Notas de rodapé|hyperpage}{2}
-\indexentry{Zotero|hyperpage}{3}
-\indexentry{Mendeley|hyperpage}{3}
+\indexentry{Inglês|hyperindexformat{\see{Língua estrangeira}}}{xii}
+\indexentry{Figuras|hyperindexformat{\see{Floats}}}{xii}
+\indexentry{Tabelas|hyperindexformat{\see{Floats}}}{xii}
+\indexentry{Código-fonte|hyperindexformat{\see{Floats}}}{xii}
+\indexentry{Subcaptions|hyperindexformat{\see{Subfiguras}}}{xii}
+\indexentry{Sublegendas|hyperindexformat{\see{Subfiguras}}}{xii}
+\indexentry{Equações|hyperindexformat{\see{Modo matemático}}}{xii}
+\indexentry{Fórmulas|hyperindexformat{\see{Modo matemático}}}{xii}
+\indexentry{Rodapé, notas|hyperindexformat{\see{Notas de rodapé}}}{xii}
+\indexentry{Captions|hyperindexformat{\see{Legendas}}}{xii}
+\indexentry{Versão original|hyperindexformat{\see{Tese/Dissertação, versões}}}{xii}
+\indexentry{Versão corrigida|hyperindexformat{\see{Tese/Dissertação, versões}}}{xii}
+\indexentry{Palavras estrangeiras|hyperindexformat{\see{Língua estrangeira}}}{xii}
+\indexentry{Floats!Algoritmo|hyperindexformat{\see{Floats, ordem}}}{xii}
+\indexentry{Rust|hyperpage}{1}
+\indexentry{LLVM|hyperpage}{1}
+\indexentry{HIR|hyperpage}{1}
+\indexentry{MIR|hyperpage}{1}
+\indexentry{LLVM|hyperpage}{1}
+\indexentry{SSA|hyperpage}{2}
 \indexentry{Formatação|hyperpage}{5}
 \indexentry{Tese/Dissertação!itens obrigatórios|hyperpage}{5}
 \indexentry{Tese/Dissertação!itens opcionais|hyperpage}{5}

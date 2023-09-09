@@ -13,7 +13,7 @@
 
 \enlargethispage{.5\baselineskip}
 
-As defined by \citet{matsakis2014rust} the Rust programming language is a modern
+As defined by \citet{matsakis2014rust} the Rust \index{Rust} programming language is a modern
 systems programming language focused on safety, speed and concurrency. It compares
 to C++ in terms of mapping directly to hardware, but it is safer to use thanks to
 the guarantees it's static type system provides. The language has been successfully
@@ -22,13 +22,13 @@ and operating system kernels development \citep{levy2017case}.
 
 The Rust compiler is a complex piece of software, with many different components.
 It is written in Rust itself, making it a self-hosted language, and it is composed
-of a Rust front-end, a LLVM middle-end and a LLVM back-end.
+of a Rust front-end, a LLVM middle-end and a LLVM back-end.\index{LLVM}
 
 As described by the \citet{rustc-dev-guide} the front-end is responsible for parsing
 the source code, desugaring, checking and validating it, and generating a first intermediate
-representation of the code, called High-level Intermediate Representation (HIR).
+representation of the code, called High-level Intermediate Representation (HIR). \index{HIR}
 After this, the middle-end is responsible for lowering the HIR to a lower-level representation
-called Middle-level Intermediate Representation (MIR) by doing type checking. On the next step,
+called Middle-level Intermediate Representation (MIR) \index{MIR} by doing type checking. On the next step,
 the compiler enforces the borrow checking rules, which are one of the main features of the Rust language,
 and executes some initial optimizations, finally lowering the MIR to an IR called LLVM IR. From here on,
 the LLVM middle-end enters and starts to transform the LLVM IR into a more optimized version of itself.
@@ -48,75 +48,50 @@ A high-level overview of the Rust compilation pipeline can be seen on Figure~\re
 \unnumberedsection{LLVM Optimizations}
 \label{sec:consideracoes_preliminares}
 
-Normalmente, as citações não devem fazer parte da estrutura sintática da
-frase\footnote{E não se deve abusar das notas de rodapé.\index{Notas de rodapé}}.
-No entanto, usando referências em algum estilo autor-data (como o estilo
-plainnat do \LaTeX{}), é comum que o nome do autor faça parte da frase. Nesses
-casos, pode valer a pena mudar o formato da citação para não repetir o nome do
-autor; no \LaTeX{}, isso pode ser feito usando os comandos
-\textsf{\textbackslash{}citet}, \textsf{\textbackslash{}citep},
-\textsf{\textbackslash{}citeyear} etc. documentados no pacote
-natbib \citep{natbib}\index{natbib} (esses comandos são compatíveis com biblatex
-usando a opção \textsf{natbib=true}, ativada por padrão neste modelo). Em geral,
-portanto, as citações devem seguir estes exemplos:
+As \citet{lattner2004llvm} describe, the LLVM \index{LLVM} compiler framework is a collection of modular and reusable compiler
+and toolchain technologies. It is designed to be used as a back-end for a wide variety of programming languages,
+and it is used as the middle-end and back-end for the Rust compiler. One of the central features of LLVM is it's intermediate
+representation (IR), which is a low-level programming language similar to assembly. The IR is designed to represent
+programs in a form that is independent of the source programming language, and it is used as the common language between
+the different components of the compiler. The IR is also designed to be a target of both static and dynamic compilation
+techniques, and it is suited for optimization and analysis.
 
-\footnotesize
-\begin{verbatim}
-Modos de citação:
-indesejável: [AF83] introduziu o algoritmo ótimo.
-indesejável: (Andrew e Foster, 1983) introduziram o algoritmo ótimo.
-certo: Andrew e Foster introduziram o algoritmo ótimo [AF83].
-certo: Andrew e Foster introduziram o algoritmo ótimo (Andrew e Foster, 1983).
-certo (\citet ou \citeyear): Andrew e Foster (1983) introduziram o algoritmo ótimo.
-\end{verbatim}
-\normalsize
+The LLVM IR is a typed, static single assignment (SSA) \index{SSA} representation of a program, designed to be used in three
+different forms: in memory, as an on-disk bitcode representation (suitable for fast loading by a Just-In-Time compiler),
+and as a human readable assembly language representation. The LLVM IR is defined in three different levels of abstraction:
+the high-level virtual instruction set, the low-level virtual instruction set, and the concrete representation. The high-level
+virtual instruction set is the most abstract representation, and it is used by the front-end of the compiler. The low-level
+virtual instruction set is a more concrete representation, and it is used by the middle-end of the compiler. The concrete
+representation is the most concrete representation, and it is used by the back-end of the compiler. The LLVM IR is a
+static single assignment representation, which means that each value is assigned only once, and it is defined before it is used.
+This property simplifies the analysis and transformation of the code, and it is a requirement for some optimizations.
 
-\enlargethispage{.5\baselineskip}
+There is a set of passes that can be applied to the LLVM IR, and they are divided into two categories: analysis
+passes and transformation passes. Analysis passes are used to obtain information about the code, without changing it.
+That information can be queried by a transformation pass or by other analysis passes. The result of an analysis pass is always cached
+and will only be invalidated if the unit of IR used by it has changed.
+Transformation passes are used to change the code in some way. The operation is done in-place and always leaves the IR in a valid state.
+A transformation pass can depend on the result of an analysis pass and will only run after querying it.
 
-O uso desnecessário de termos em língua estrangeira deve ser evitado. No entanto,
-quando isso for necessário, os termos devem aparecer \textit{em itálico}.
-\index{Língua estrangeira}
-% index permite acrescentar um item no indice remissivo
+Table~\ref{tab:analysis} describe all LLVM IR analysis passes, and Table~\ref{tab:transformation} the transformation passes, that are available in the LLVM 16.0.6 release.
 
-Uma prática recomendável na escrita de textos é descrever as
-legendas\index{Legendas} das figuras e tabelas em forma auto-contida: as
-legendas devem ser razoavelmente completas, de modo que o leitor possa entender
-a figura sem ler o texto em que a figura ou tabela é citada.\index{Floats}
+%% ------------------------------------------------------------------------- %%
+\unnumberedsection{Adaptive Compilation}
 
-\unnumberedsection{Ferramentas bibliográficas}
+As described by \citet{cooper2005acme} adaptive compilation is a technique that allows a compiler to increase the performance
+of a program by monitoring it's execution and recompiling it with different optimizations. The compiler can use the information
+gathered during the execution to decide which optimizations to apply, and it can also use the information to decide when to
+recompile the program. The compiler can also use the information to decide when to stop recompiling the program, and it can
+also decide to recompile the program with less optimizations if it detects that the program is not benefiting from them. As such,
+an adaptive compiler can be seen as a compiler that is able to adapt to the behavior of the program through a compile-execute-analyze feedback loop,
+based on some well defined performance metric, such as binary size or execution time. The main task of an adaptive compiler becomes then to find
+the best set of optimizations for a given program.
 
-Embora seja possível pesquisar por material acadêmico na Internet usando
-sistemas de busca ``comuns'', existem ferramentas dedicadas, como o
-\textsf{Google Scholar}\index{Google Scholar} (\url{scholar.google.com}).
-O \textsf{Web of Science}\index{Web of Science}
-(\url{webofscience.com}) e o \textsf{Scopus}\index{Scopus} (\url{scopus.com})
-oferecem recursos sofisticados e limitam a busca a periódicos com boa
-reputação acadêmica. Essas duas plataformas não são gratuitas, mas os alunos
-da USP têm acesso a elas através da instituição. Algumas editoras, como a
-ACM (\url{dl.acm.org}) e a IEEE (\url{ieeexplore.ieee.org}), também têm
-sistemas de busca bibliográfica. Todas essas ferramentas são capazes de
-exportar os dados para o formato .bib, usado pelo \LaTeX{} (no Google
-Scholar, é preciso ativar a opção correspondente nas preferências). O sítio
-\url{liinwww.ira.uka.de/bibliography} também permite buscar e baixar
-referências bibliográficas relevantes para a área de computação.
+The main advantage of adaptive compilation is that it allows the compiler to make decisions based on the actual behavior of the
+program, instead of making decisions based on the static analysis of the code. This allows the compiler to make better decisions
+and to generate better code. The main disadvantage of adaptive compilation is the large amount of time it takes to walk over the search space of
+all optimization passes.
 
-Lamentavelmente, ainda não existe um mecanismo de verificação ou validação
-das informações nessas plataformas. Portanto, é fortemente sugerido validar
-todas as informações de tal forma que as entradas bib estejam corretas.
-De qualquer modo, tome muito cuidado na padronização das referências
-bibliográficas: ou considere TODOS os nomes dos autores por extenso, ou
-TODOS os nomes dos autores abreviados. Evite misturas inapropriadas.\looseness=-1
 
-Apenas uma parte dos artigos acadêmicos de interesse está disponível livremente
-na Internet; os demais são restritos a assinantes. A CAPES assina um grande
-volume de publicações e disponibiliza o acesso a elas para diversas universidades
-brasileiras, entre elas a USP, através do seu portal de periódicos
-(\url{periodicos.capes.gov.br}). Existe uma extensão para os navegadores
-Chrome e Firefox (\url{www.infis.ufu.br/capes-periodicos}) que facilita o uso
-cotidiano do portal.
 
-Para manter um banco de dados organizado sobre artigos e outras fontes bibliográficas
-relevantes para sua pesquisa, é altamente recomendável que você use uma ferramenta
-como Zotero~(\url{zotero.org})\index{Zotero} ou
-Mendeley~(\url{mendeley.com})\index{Mendeley}. Ambas podem exportar seus dados no
-formato .bib, compatível com \LaTeX{}.
+%% ------------------------------------------------------------------------- %%

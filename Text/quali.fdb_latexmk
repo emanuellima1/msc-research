@@ -1,18 +1,18 @@
 # Fdb version 4
-["biber quali"] 1694278527 "quali.bcf" "quali.bbl" "quali" 1694279125 0
-  "./bibliografia.bib" 1694277932 11552 1ab8ce5728711d6c84ea4343a43afd02 ""
-  "quali.bcf" 1694279125 108531 20d5ecb50fe8dff320ddaaf65cc9ef32 "pdflatex"
+["biber quali"] 1694289727 "quali.bcf" "quali.bbl" "quali" 1694289740 0
+  "./bibliografia.bib" 1694287876 12315 d8b40b6537c5317a0eb909024a41d682 ""
+  "quali.bcf" 1694289740 108610 da9032ae5d4d757e0873815f9e1338cd "pdflatex"
   (generated)
   "quali.bbl"
   "quali.blg"
   (rewritten before read)
-["makeindex quali.idx"] 1694279117 "quali.idx" "quali.ind" "quali" 1694279125 0
-  "quali.idx" 1694279125 2337 d9146b0e1d86cf0146a3fa49b4103e7b "pdflatex"
+["makeindex quali.idx"] 1694289727 "quali.idx" "quali.ind" "quali" 1694289740 0
+  "quali.idx" 1694289740 2175 faed047156617e4087f2cf7add67e37c "pdflatex"
   (generated)
   "quali.ilg"
   "quali.ind"
   (rewritten before read)
-["pdflatex"] 1694279121 "quali.tex" "quali.pdf" "quali" 1694279125 0
+["pdflatex"] 1694289736 "quali.tex" "quali.pdf" "quali" 1694289740 0
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc" 1667852677 3022 13dbae1db4ca7b6d6a3611a22a194cb8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_cb34qf.enc" 1667852677 3498 97969c5bc9b87f369104f937c6467737 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_hvvyjb.enc" 1667852677 3029 d21461a1311a0e34eee22c3de743f7f5 ""
@@ -439,10 +439,12 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1685629402 4570452 4d3b52c0623417ccf0f75a5262f823d3 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1687384264 6535171 15964b3685e9bef804efc6e29d00be91 ""
   "conteudo/05-exemplo-exemplos.tex" 1672697858 36778 e1b8640b2dbde5ba583968504528f0d8 ""
+  "conteudo/anexoA.tex" 1694287287 1930 dceae147efa1261653584060d9dbe945 ""
+  "conteudo/anexoB.tex" 1694287309 1953 694527d91b1bbb136e605cc42b936694 ""
   "conteudo/apendice-exemplo-pseudocodigo.tex" 1672697858 5470 7088d9b46c1986d6732fa03c85af731a ""
   "conteudo/discuss.tex" 1672697858 38105 408ac460fcd306292e6bc3dee6bec9aa ""
   "conteudo/euclid.psc" 1672697858 204 d321eac3c4c3da958138faf78eb79a91 ""
-  "conteudo/intro.tex" 1694279099 6941 2545d50c7056e4f01884b2c9a9c732d7 ""
+  "conteudo/intro.tex" 1694289026 7170 a84df7acaf4eded535f133aa599cab42 ""
   "conteudo/method.tex" 1672697858 3185 bc942ef2d3d7bdbfbc354f3a1a5d5fcf ""
   "conteudo/results.tex" 1672697858 8228 5967dfee1fa901c46844db73f88e548c ""
   "conteudo/resumoabstract.tex" 1694266846 2683 4cc94e6f3e10f7c3f5fdc5355e40751f ""
@@ -470,16 +472,16 @@
   "figuras/rustc.png" 1694279037 20871 4de8bf8ce86895e121ad70b271f95343 ""
   "hyperxindy.xdy" 1690386710 301 e1a1e2f569821a37ccf6e0c8ec8620ec ""
   "mkidxhead.ist" 1690386710 80 c56667d514c1ae5929d36d5c24f727ad ""
-  "quali.aux" 1694279125 14831 25dc864727929f26233cb14da25a986c "pdflatex"
-  "quali.bbl" 1694278527 27283 f946dfd43ab8541bdac3df08372ee6e6 "biber quali"
-  "quali.ind" 1694279117 2594 178aafc04f2b49fb30d7b8b66a1572eb "makeindex quali.idx"
-  "quali.lof" 1694279125 751 53d14f61547c3eeccac8b1d9eeb66232 "pdflatex"
-  "quali.lop" 1694279125 364 aa0405240edf9b259a8a710f80319629 "pdflatex"
-  "quali.lot" 1694279125 668 284064ae2e313465c09d5a08543d02ce "pdflatex"
-  "quali.out" 1694279125 5493 eeb093423d0342338f4c24df3cca8d67 "pdflatex"
-  "quali.run.xml" 1694279125 2473 16fe426f20a4cbde24090cd6c153dc43 "pdflatex"
-  "quali.tex" 1694274999 19038 c5f551cbb85a7f50c5173baf484ccc89 ""
-  "quali.toc" 1694279125 3151 7bc421d4732bd285ef371a47fd208bd2 "pdflatex"
+  "quali.aux" 1694289740 16579 1cae8c070bd998fc5cd7964293df665d "pdflatex"
+  "quali.bbl" 1694289728 31530 1824465b303b447da1c26e82b0d23926 "biber quali"
+  "quali.ind" 1694289727 2478 867fd64940abb429d7ab46654f863c08 "makeindex quali.idx"
+  "quali.lof" 1694289740 791 ec7ab7947c63e5b3f31f94a2ab3d6ce7 "pdflatex"
+  "quali.lop" 1694289740 364 aa0405240edf9b259a8a710f80319629 "pdflatex"
+  "quali.lot" 1694289740 914 3fd4e2cdd54b7213dde658e85778d079 "pdflatex"
+  "quali.out" 1694289740 5793 aa6731014f5b489aa672428f7d82687b "pdflatex"
+  "quali.run.xml" 1694289740 2473 16fe426f20a4cbde24090cd6c153dc43 "pdflatex"
+  "quali.tex" 1694286307 19047 638e364e85bcf123218edf157ebc9d3d ""
+  "quali.toc" 1694289740 3529 6e4d50d3d61b7481fec7131f33cd9024 "pdflatex"
   (generated)
   "quali.aux"
   "quali.bcf"

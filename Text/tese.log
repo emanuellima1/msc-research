@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=xelatex 2023.6.21)  9 SEP 2023 13:45
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=xelatex 2023.6.21)  9 SEP 2023 16:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2978,7 +2978,7 @@ l.351 \input{conteudo/00-exemplo-introducao}
 Here is how much of TeX's memory you used:
  67612 strings out of 478762
  1555979 string characters out of 5850687
- 2612472 words of memory out of 6000000
+ 2612471 words of memory out of 6000000
  86319 multiletter control sequences out of 15000+600000
  525380 words of font info for 169 fonts, out of 8000000 for 9000
  71 hyphenation exceptions out of 8191

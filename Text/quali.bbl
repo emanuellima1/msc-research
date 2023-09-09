@@ -235,6 +235,75 @@
       \field{pages}{341\bibrangedash 344}
       \range{pages}{4}
     \endentry
+    \entry{cooper2005acme}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=71f400e279a0a15beb329315b99759a1}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={Keith\bibnamedelima D},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac3591e21fc780ed1575a5d28673d97b}{%
+           family={Grosul},
+           familyi={G\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b7cd5538a4a3bb31e84ecc09719610a}{%
+           family={Harvey},
+           familyi={H\bibinitperiod},
+           given={Timothy\bibnamedelima J},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ceca85edb064d1a01df1636bbf20692}{%
+           family={Reeves},
+           familyi={R\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b9281008b69674a1d4c76460d361ade8}{%
+           family={Subramanian},
+           familyi={S\bibinitperiod},
+           given={Devika},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a13a70664e0baca925e51491a217c03}{%
+           family={Torczon},
+           familyi={T\bibinitperiod},
+           given={Linda},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa78a05c66dbb77776f3b7f80eb4dabe}{%
+           family={Waterman},
+           familyi={W\bibinitperiod},
+           given={Todd},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{69750bc8fac43838e52be0baaeb39bf8}
+      \strng{fullhash}{51ac4ceb90ee2ece056b765bc33f7236}
+      \strng{bibnamehash}{69750bc8fac43838e52be0baaeb39bf8}
+      \strng{authorbibnamehash}{69750bc8fac43838e52be0baaeb39bf8}
+      \strng{authornamehash}{69750bc8fac43838e52be0baaeb39bf8}
+      \strng{authorfullhash}{51ac4ceb90ee2ece056b765bc33f7236}
+      \field{labelalpha}{Coo+05}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM SIGPLAN Notices}
+      \field{number}{7}
+      \field{title}{ACME: adaptive compilation made efficient}
+      \field{volume}{40}
+      \field{year}{2005}
+      \field{pages}{69\bibrangedash 77}
+      \range{pages}{9}
+    \endentry
     \entry{natbib}{manual}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=8d668f2ff08c48a82cff87c087cdf12e}{%
@@ -422,6 +491,43 @@
       \field{month}{9}
       \field{title}{Mathematical Writing}
       \field{year}{1996}
+    \endentry
+    \entry{lattner2004llvm}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=082d304bf1444853e07be11590d172a2}{%
+           family={Lattner},
+           familyi={L\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1bbfd49b96c18edb5a0c84c94c3fa6c4}{%
+           family={Adve},
+           familyi={A\bibinitperiod},
+           given={Vikram},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{0964e8d9ddfb3d949bce90ef30732275}
+      \strng{fullhash}{0964e8d9ddfb3d949bce90ef30732275}
+      \strng{bibnamehash}{0964e8d9ddfb3d949bce90ef30732275}
+      \strng{authorbibnamehash}{0964e8d9ddfb3d949bce90ef30732275}
+      \strng{authornamehash}{0964e8d9ddfb3d949bce90ef30732275}
+      \strng{authorfullhash}{0964e8d9ddfb3d949bce90ef30732275}
+      \field{labelalpha}{LA04}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International symposium on code generation and optimization, 2004. CGO 2004.}
+      \field{title}{LLVM: A compilation framework for lifelong program analysis \& transformation}
+      \field{year}{2004}
+      \field{pages}{75\bibrangedash 86}
+      \range{pages}{12}
     \endentry
     \entry{biblatex}{manual}{}
       \name{author}{5}{}{%

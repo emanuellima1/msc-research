@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2023.6.21)  9 SEP 2023 14:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2023.6.21)  9 SEP 2023 17:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2140,11 +2140,13 @@ LaTeX Font Info:    Font shape `LS1/libertinust1math/b/it' will be
 \tf@lot=\write8
 \openout8 = `quali.lot'.
 
-(./quali.lop)
+(./quali.lop [8.14
+
+])
 \tf@lop=\write9
 \openout9 = `quali.lop'.
 
-[8.14
+[9.15] [10.16
 
 ] (./quali.toc
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/b/n' will be
@@ -2153,51 +2155,33 @@ LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/b/n' will be
 (Font)              scaled to size 8.0pt on input line 11.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 12.
-[9.15
-
-])
+[11.17])
 \tf@toc=\write10
 \openout10 = `quali.toc'.
 
-[10.16] (./conteudo/intro.tex
+[12.18] (./conteudo/intro.tex
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/sc' will be
 (Font)              scaled to size 12.0pt on input line 16.
-<figuras/rustc.png, id=274, 733.23938pt x 126.4725pt>
+<figuras/rustc.png, id=296, 733.23938pt x 126.4725pt>
 File: figuras/rustc.png Graphic file (type png)
 <use figuras/rustc.png>
 Package pdftex.def Info: figuras/rustc.png  used on input line 41.
 (pdftex.def)             Requested size: 432.48189pt x 74.5969pt.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 42.
-LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 52.
-LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 57.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[1.17
+[1.19
 
 
- <./figuras/rustc.png>]
-LaTeX Font Info:    Trying to load font information for T1+SourceCodePro-TLF on input line 64.
-(/usr/share/texlive/texmf-dist/tex/latex/sourcecodepro/T1SourceCodePro-TLF.fd
-File: T1SourceCodePro-TLF.fd 2018/02/18 (autoinst) Font definitions for T1/SourceCodePro-TLF.
-)
-LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 64.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `SourceCodePro-TLF' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-[2.18]) (./conteudo/theory.tex [3.19] [4.20
+ <./figuras/rustc.png>] [2.20]) (./conteudo/theory.tex [3.21] [4.22
 
 ]
 Chapter 1.
-) (./conteudo/method.tex [5.21] [6.22
+) (./conteudo/method.tex [5.23] [6.24
 
 ]
 Chapter 2.
+LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 11.
 LaTeX Font Info:    Trying to load font information for TS1+LibertinusSerif-TLF on input line 17.
 (/usr/share/texlive/texmf-dist/tex/latex/libertinus-type1/TS1LibertinusSerif-TLF.fd
 File: TS1LibertinusSerif-TLF.fd 2022/11/07 (autoinst) Font definitions for TS1/LibertinusSerif-TLF.
@@ -2208,9 +2192,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LibertinusSerif-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for T1+SourceCodePro-TLF on input line 17.
+(/usr/share/texlive/texmf-dist/tex/latex/sourcecodepro/T1SourceCodePro-TLF.fd
+File: T1SourceCodePro-TLF.fd 2018/02/18 (autoinst) Font definitions for T1/SourceCodePro-TLF.
+)
 LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/m/n' will be
 (Font)              scaled to size 10.20007pt on input line 17.
-[7.23]) (./conteudo/results.tex [8.24]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `SourceCodePro-TLF' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 35.
+[7.25]) (./conteudo/results.tex [8.26]
 Chapter 3.
 LaTeX Font Info:    Font shape `LS1/libertinust1math/m/n' will be
 (Font)              scaled to size 24.88pt on input line 5.
@@ -2256,7 +2250,7 @@ LaTeX Font Info:    Font shape `LS1/libertinust1math/b/it' will be
 (Font)              scaled to size 17.28pt on input line 5.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/b/n' will be
 (Font)              scaled to size 20.74pt on input line 5.
-[9.25
+[9.27
 
 ]
 LaTeX Font Info:    Trying to load font information for U+futs on input line 104.
@@ -2265,36 +2259,36 @@ File: ufuts.fd 2021/11/24 Fontinst v1.933 font definitions for U/futs.
 )
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 117.
-[10.26]) (./conteudo/discuss.tex [11.27] [12.28
+[10.28]) (./conteudo/discuss.tex [11.29] [12.30
 
 ]
 Chapter 4.
-[13.29] [14.30] [15.31]
+[13.31] [14.32] [15.33]
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/sc' will be
 (Font)              scaled to size 10.0pt on input line 235.
-[16.32]
+[16.34]
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/b/it' will be
 (Font)              scaled to size 17.28pt on input line 287.
-[17.33] [18.34]
+[17.35] [18.36]
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/it' will be
 (Font)              scaled to size 12.0pt on input line 462.
-[19.35] [20.36]
+[19.37] [20.38]
 Overfull \hbox (1.24817pt too wide) in paragraph at lines 629--637
 []\T1/LibertinusSerif-TLF/m/n/12 (-20) A linguagem é muito prolixa: é bastante tedioso escrever coisas como ``\T1/LibertinusSans-TLF/m/n/12 (-20) \begin{itemize}\T1/LibertinusSerif-TLF/m/n/12 (-20) ''
  []
 
-[21.37]) (./conteudo/05-exemplo-exemplos.tex [22.38]
+[21.39]) (./conteudo/05-exemplo-exemplos.tex [22.40]
 Chapter 5.
-[23.39
+[23.41
 
-] [24.40]
+] [24.42]
 \c@absurd=\count564
 \c@theorem=\count565
 \c@conjecture=\count566
-[25.41]
+[25.43]
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 245.
-<figuras//exemplo-grafo.pdf, id=533, 722.7pt x 722.7pt>
+<figuras//exemplo-grafo.pdf, id=550, 722.7pt x 722.7pt>
 File: figuras//exemplo-grafo.pdf Graphic file (type pdf)
 <use figuras//exemplo-grafo.pdf>
 Package pdftex.def Info: figuras//exemplo-grafo.pdf  used on input line 294.
@@ -2303,21 +2297,23 @@ File: figuras//exemplo-grafo.pdf Graphic file (type pdf)
 <use figuras//exemplo-grafo.pdf>
 Package pdftex.def Info: figuras//exemplo-grafo.pdf  used on input line 304.
 (pdftex.def)             Requested size: 138.39261pt x 138.3841pt.
-[26.42 <./figuras//exemplo-grafo.pdf>] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[26.44 <./figuras//exemplo-grafo.pdf>] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
+LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/m/n' will be
+(Font)              scaled to size 8.50006pt on input line 387.
 Package hyperref Info: bookmark level for unknown program defaults to 0 on input line 395.
 LaTeX Font Info:    Font shape `T1/LibertinusSerif-TLF/m/it' will be
 (Font)              scaled to size 8.0pt on input line 421.
-[27.43] (./figuras/gnuplot.tkz
+[27.45] (./figuras/gnuplot.tkz
 LaTeX Font Info:    Font shape `T1/LibertinusSans-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 3.
 \gptboxheight=\skip145
 \gptboxwidth=\skip146
 \gptboxtext=\box147
-<figuras/gnuplot.pdf, id=563, 194.7275pt x 129.48375pt>
+<figuras/gnuplot.pdf, id=579, 194.7275pt x 129.48375pt>
 File: figuras/gnuplot.pdf Graphic file (type pdf)
 <use figuras/gnuplot.pdf>
 Package pdftex.def Info: figuras/gnuplot.pdf  used on input line 123.
@@ -2325,12 +2321,12 @@ Package pdftex.def Info: figuras/gnuplot.pdf  used on input line 123.
 )
 LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/m/it' will be
 (Font)              scaled to size 8.50006pt on input line 427.
-(./figuras/matplotlib.pgf) [28.44 <./figuras/gnuplot.pdf>] [29.45]
+(./figuras/matplotlib.pgf) [28.46 <./figuras/gnuplot.pdf>] [29.47]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[30.46]
+[30.48]
 \savedwidth=\skip147
-) [31.47] [32.48] (./conteudo/apendice-exemplo-pseudocodigo.tex
+) [31.49] [32.50] (./conteudo/apendice-exemplo-pseudocodigo.tex
 Appendix A.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 23.
 (./conteudo/euclid.psc
@@ -2360,7 +2356,7 @@ Overfull \hbox (35.0pt too wide) in paragraph at lines 57--57
 [] 
  []
 
-[33.49
+[33.51
 
 
 ]
@@ -2373,18 +2369,26 @@ Underfull \hbox (badness 4886) in paragraph at lines 114--119
 \T1/LibertinusSerif-TLF/m/n/12 (+20) ``\T1/LibertinusSans-TLF/m/n/12 (+20) specialidentifiers\T1/LibertinusSerif-TLF/m/n/12 (+20) ''. Você pode usá-los com \T1/LibertinusSans-TLF/m/n/12 (+20) \spe-cialid{blah}\T1/LibertinusSerif-TLF/m/n/12 (+20) , com a opção
  []
 
-) [34.50]
+) [34.52] (./conteudo/anexoA.tex
+Annex A.
+[35.53
+
+
+]) (./conteudo/anexoB.tex [36.54]
+Annex B.
+[37.55
+
+]) [38.56]
 LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/m/it' will be
-(Font)              scaled to size 10.20007pt on input line 446.
-[35.51
+(Font)              scaled to size 10.20007pt on input line 447.
+[39.57
 
 
-
-] [36.52] (./quali.ind) (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+] [40.58] (./quali.ind) (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [37.53
+) [41.59
 
 
 ]
@@ -2394,24 +2398,24 @@ Package imakeidx Warning: Remember to run (pdf)latex again after calling
 
 (./quali.aux)
 Package rerunfilecheck Info: File `quali.out' has not changed.
-(rerunfilecheck)             Checksum: EEB093423D0342338F4C24DF3CCA8D67;5493.
+(rerunfilecheck)             Checksum: AA6731014F5B489AA672428F7D82687B;5793.
 Package logreq Info: Writing requests to 'quali.run.xml'.
 \openout1 = `quali.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 66330 strings out of 478031
- 1491550 string characters out of 5840270
- 2430271 words of memory out of 6000000
- 84266 multiletter control sequences out of 15000+600000
- 785370 words of font info for 628 fonts, out of 8000000 for 9000
+ 66370 strings out of 478031
+ 1492332 string characters out of 5840270
+ 2431602 words of memory out of 6000000
+ 84289 multiletter control sequences out of 15000+600000
+ 785481 words of font info for 628 fonts, out of 8000000 for 9000
  71 hyphenation exceptions out of 8191
  108i,30n,123p,1359b,2887s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_cb34qf.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/sourcecodepro/a_lutrty.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinust1math/libusEX.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinust1math/libusSYM.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinust1math/libusBB.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_hvvyjb.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinust1math/libusMR.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_opzo24.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinust1math/libusMI.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_rlktsf.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_nufysp.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_sfissr.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-BoldItalic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Italic.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/libertinust1math/LibertinusT1Math.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/sourcecodepro/SourceCodePro-It.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/sourcecodepro/SourceCodePro-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-orns.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on quali.pdf (53 pages, 1087746 bytes).
+Output written on quali.pdf (59 pages, 1092414 bytes).
 PDF statistics:
- 844 PDF objects out of 1000 (max. 8388607)
- 745 compressed objects within 8 object streams
- 178 named destinations out of 1000 (max. 500000)
- 133928 words of extra memory for PDF output out of 154059 (max. 10000000)
+ 876 PDF objects out of 1000 (max. 8388607)
+ 771 compressed objects within 8 object streams
+ 189 named destinations out of 1000 (max. 500000)
+ 133944 words of extra memory for PDF output out of 154059 (max. 10000000)
 

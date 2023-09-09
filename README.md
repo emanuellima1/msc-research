@@ -20,7 +20,7 @@ Won 2nd place on the undergraduate research track of the conference.
 
 ### Phase 3
 
-- Reorganizing for the MSc
+- [Qualification Exam Text](Text/quali.pdf)
 
 ## Interesting links
 

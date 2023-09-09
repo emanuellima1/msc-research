@@ -4,8 +4,8 @@
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Introduction}{1}{section*.8}%
-\contentsline {section}{Considerações de estilo}{2}{section*.10}%
-\contentsline {section}{Ferramentas bibliográficas}{2}{section*.11}%
+\contentsline {section}{LLVM Optimizations}{1}{section*.10}%
+\contentsline {section}{Adaptive Compilation}{2}{section*.11}%
 \contentsline {chapter}{\numberline {1}Theoretical Underpinnings}{5}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Usando este modelo}{7}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Instalação do \LaTeX {}}{9}{chapter.3}%
@@ -39,6 +39,13 @@
 {\protect \large \protect \bfseries \protect \hspace {-1.3em}Appendixes\par }
 \protect \@afterheading 
 \contentsline {chapter}{\numberline {A}Código-fonte e pseudocódigo}{33}{appendix.A}%
+{\protect \large \protect \vspace {0pt plus 2\baselineskip minus 0pt}}
+\protect \pagebreak [2]
+\protect \vspace {.8\baselineskip }
+{\protect \large \protect \bfseries \protect \hspace {-1.3em}Annexes\par }
+\protect \@afterheading 
+\contentsline {chapter}{\numberline {A}Table of Analysis Passes}{35}{annex.A}%
+\contentsline {chapter}{\numberline {B}Table of Transformation Passes}{37}{annex.B}%
 \vspace {2\baselineskip plus .5\baselineskip minus .5\baselineskip }
-\contentsline {chapter}{References}{35}{appendix*.19}%
-\contentsline {chapter}{Index}{37}{section*.20}%
+\contentsline {chapter}{References}{39}{annex*.19}%
+\contentsline {chapter}{Index}{41}{section*.20}%

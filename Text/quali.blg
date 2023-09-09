@@ -1,15 +1,15 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is 'quali.blg'
-[42] biber:340> INFO - === sáb set  9, 2023, 13:55:27
-[50] Biber.pm:418> INFO - Reading 'quali.bcf'
-[88] Biber.pm:978> INFO - Found 16 citekeys in bib section 0
-[95] Biber.pm:4401> INFO - Processing section 0
-[101] Biber.pm:4592> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
-[102] bibtex.pm:1713> INFO - LaTeX decoding ...
-[116] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliografia.bib'
-[194] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[194] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[194] Biber.pm:4221> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[194] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[215] bbl.pm:654> INFO - Writing 'quali.bbl' with encoding 'UTF-8'
-[222] bbl.pm:757> INFO - Output to quali.bbl
+[44] biber:340> INFO - === sáb set  9, 2023, 17:02:08
+[54] Biber.pm:418> INFO - Reading 'quali.bcf'
+[94] Biber.pm:978> INFO - Found 18 citekeys in bib section 0
+[102] Biber.pm:4401> INFO - Processing section 0
+[108] Biber.pm:4592> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
+[109] bibtex.pm:1713> INFO - LaTeX decoding ...
+[124] bibtex.pm:1518> INFO - Found BibTeX data source 'bibliografia.bib'
+[218] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[218] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[218] Biber.pm:4221> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[218] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[232] bbl.pm:654> INFO - Writing 'quali.bbl' with encoding 'UTF-8'
+[241] bbl.pm:757> INFO - Output to quali.bbl
